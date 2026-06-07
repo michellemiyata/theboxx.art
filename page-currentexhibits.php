@@ -1,0 +1,362 @@
+<?php get_header(); ?>
+
+  <!-- Immersive Page Hero Banner -->
+  <section class="exhibitions-hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Featured Exhibition</span>
+      <h1 class="hero-title">MOKA AMORE</h1>
+      <p class="hero-subtitle">More than just Nonna's Coffee Pot</p>
+      <div class="hero-divider"></div>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <section class="section container" style="padding-top: 3rem; padding-bottom: 2rem;">
+    <!-- Main Poster & Showtimes Box (Split Grid) -->
+    <div class="exhibit-main-box">
+      <div class="exhibit-poster-column">
+        <div class="exhibit-poster-img-wrapper">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/moka_amore_poster.jpg" alt="Moka Amore Exhibition Poster">
+        </div>
+      </div>
+      
+      <div class="exhibit-details-column">
+        <div class="showtimes-details-box">
+          <h3 class="details-box-title">Show Times</h3>
+          <ul class="showtimes-list">
+            <li>
+              <span class="day-badge">Friday</span>
+              <span class="time-detail"><i class="fa-regular fa-clock"></i> April 19 &bull; 6:00 PM – 9:00 PM</span>
+            </li>
+            <li>
+              <span class="day-badge">Saturday</span>
+              <span class="time-detail"><i class="fa-regular fa-clock"></i> April 20 &bull; 12:00 PM – 8:00 PM</span>
+            </li>
+            <li>
+              <span class="day-badge">Sunday</span>
+              <span class="time-detail"><i class="fa-regular fa-clock"></i> April 21 &bull; 12:00 PM – 4:00 PM</span>
+            </li>
+          </ul>
+          
+          <div class="tickets-cta-wrapper">
+            <p class="cta-label">Reserve Your Invitation</p>
+            <button class="tickets-status-btn-interactive" id="tickets-btn">
+              <span>Tickets Available Soon - Get Notified</span>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About this event -->
+    <div class="about-event-section">
+      <h3 class="about-event-title">About this event</h3>
+      <p class="about-event-dates">Exhibit Dates: April 19-21, 2025</p>
+      <p class="about-event-desc">An exquisite exhibition of iconic Italian coffee makers mapping their history, unique geometry, and cultural worth.</p>
+    </div>
+
+    <!-- About the Artist Box (Horizontally Split & Large) -->
+    <div class="artist-section-container">
+      <div class="artist-main-box">
+        <!-- Portrait Image on Left -->
+        <div class="artist-portrait-column">
+          <div class="artist-portrait-img-wrapper">
+            <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/artist_louie_chiaino.png" alt="Louie Chiaino curator portrait">
+            <span class="artist-label-badge">Collector & Curator</span>
+          </div>
+        </div>
+        <!-- Bio details on Right -->
+        <div class="artist-details-column">
+          <h3 class="artist-title">About the Artist</h3>
+          <div class="artist-bio-text">
+            <p><strong>Louie Chiaino</strong>, Curator & Collector of Moka Amore. A true collector of Mokas, Louie is bewitched by the contours of each treasured piece. He is fascinated by its history and enchanted with its cultural worth.</p>
+            <p>He scours vintage design sites, second-hand stores, front lawns, and strangers' garages in quest of new gems to add to his bevy of beauties. His personal dance with the Moka is a romantic one, an idealistic one, reminiscent of all that he holds dear in memories.</p>
+            
+            <blockquote class="artist-quote">
+              <p>"The Moka is more than just Nonna's coffee pot—it is a geometric marvel, an icon of design, and a vessel of warm Italian memories."</p>
+              <cite>&mdash; Louie Chiaino</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exhibition Pieces Grid -->
+    <div class="exhibition-grid-header">
+      <h3 class="grid-title">Featured Pieces</h3>
+      <p class="grid-subtitle">Click on any piece to view in full resolution</p>
+    </div>
+    <div class="image-grid" style="margin-top: 2rem; margin-bottom: 4rem;">
+      <div class="image-grid-item-boxed artwork-card" data-index="0">
+        <div class="artwork-image-wrapper">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/moka_1.png" alt="Moka Amore Square Poster">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Moka Amore I</h4>
+          <p>Louie Chiaino</p>
+        </div>
+      </div>
+      <div class="image-grid-item-boxed artwork-card" data-index="1">
+        <div class="artwork-image-wrapper">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/moka_2.png" alt="Moka Amore Green Pot Red Handle Poster">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Moka Amore II</h4>
+          <p>Louie Chiaino</p>
+        </div>
+      </div>
+      <div class="image-grid-item-boxed artwork-card" data-index="2">
+        <div class="artwork-image-wrapper">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/moka_3.png" alt="Moka Amore Green Pot Dome Top Poster">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Moka Amore III</h4>
+          <p>Louie Chiaino</p>
+        </div>
+      </div>
+      <div class="image-grid-item-boxed artwork-card" data-index="3">
+        <div class="artwork-image-wrapper">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/moka_4.png" alt="Moka Amore Silver Pot Clover Top Poster">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Moka Amore IV</h4>
+          <p>Louie Chiaino</p>
+        </div>
+      </div>
+      <div class="image-grid-item-boxed artwork-card" data-index="4">
+        <div class="artwork-image-wrapper">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/moka_5.png" alt="Moka Amore Green Pot Vertical Poster">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Moka Amore V</h4>
+          <p>Louie Chiaino</p>
+        </div>
+      </div>
+      <div class="image-grid-item-boxed artwork-card" data-index="5">
+        <div class="artwork-image-wrapper">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/moka_6.png" alt="Moka Amore Silver Pot Vertical Poster">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Moka Amore VI</h4>
+          <p>Louie Chiaino</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Past Exhibitions Section -->
+  <section class="section section-alt" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 6rem 0;">
+    <div class="container">
+      <div class="exhibition-grid-header" style="margin-top: 0; margin-bottom: 4rem;">
+        <h2 class="grid-title">Past Exhibitions</h2>
+        <p class="grid-subtitle">A collection of previous showcases hosted at The Boxx</p>
+      </div>
+
+      <div class="past-exhibits-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem;">
+        <!-- Past Exhibit 1 -->
+        <div class="past-exhibit-card" style="background: #ffffff; border: 1px solid #000000; padding: 0.75rem; display: flex; flex-direction: column;">
+          <div style="position: relative; overflow: hidden; height: 240px; border-bottom: 1px solid var(--border-color); margin-bottom: 1.25rem;">
+            <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/abballe_promo.jpg" alt="ABBALLE Art Exhibition" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 0.5rem; text-align: left; flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 style="font-size: 1.4rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">ABBALLE Art Exhibition</h3>
+            <p style="font-weight: 700; color: var(--primary-color); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 1rem;">Solo Showcase &bull; April 2025</p>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light); margin-bottom: 1.5rem; flex-grow: 1;">A collision of contemporary, classical, baroque, and colloquial art featuring the refined works of Canadian painter Andrew Abballe.</p>
+            <a href="#featured-artists" class="btn-primary" style="text-align: center; display: block; border: 1px solid #000000; padding: 0.8rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px;">View Artist Profile</a>
+          </div>
+        </div>
+
+        <!-- Past Exhibit 2 -->
+        <div class="past-exhibit-card" style="background: #ffffff; border: 1px solid #000000; padding: 0.75rem; display: flex; flex-direction: column;">
+          <div style="position: relative; overflow: hidden; height: 240px; border-bottom: 1px solid var(--border-color); margin-bottom: 1.25rem;">
+            <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/Infinite-Dreams-scaled.jpg" alt="Infinite Dreams Exhibition" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 0.5rem; text-align: left; flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 style="font-size: 1.4rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Infinite Dreams</h3>
+            <p style="font-weight: 700; color: var(--primary-color); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 1rem;">Group Exhibition &bull; March 2025</p>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light); margin-bottom: 1.5rem; flex-grow: 1;">An abstract visual exploration of human consciousness, dreams, and spatial reflections by rising local Canadian painters.</p>
+            <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn-primary" style="text-align: center; display: block; border: 1px solid #000000; padding: 0.8rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px;">Inquire About Pieces</a>
+          </div>
+        </div>
+
+        <!-- Past Exhibit 3 -->
+        <div class="past-exhibit-card" style="background: #ffffff; border: 1px solid #000000; padding: 0.75rem; display: flex; flex-direction: column;">
+          <div style="position: relative; overflow: hidden; height: 240px; border-bottom: 1px solid var(--border-color); margin-bottom: 1.25rem;">
+            <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/EOS-Ritratti-del-Mito-2017-cm-21x30-tecnica-mista-su-compensato-E-350_400.jpeg" alt="EOS Ritratti del Mito" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 0.5rem; text-align: left; flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 style="font-size: 1.4rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">EOS Ritratti del Mito</h3>
+            <p style="font-weight: 700; color: var(--primary-color); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 1rem;">Mixed-Media &bull; Feb 2025</p>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light); margin-bottom: 1.5rem; flex-grow: 1;">A mixed-media showcase exploring classical portraits, ancient mythology, and contemporary wooden panel textures.</p>
+            <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn-primary" style="text-align: center; display: block; border: 1px solid #000000; padding: 0.8rem; text-transform: uppercase; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px;">Inquire About Pieces</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Artists Section -->
+  <section id="featured-artists" class="section container" style="padding-top: 5rem; padding-bottom: 5rem;">
+    <div class="exhibition-grid-header" style="margin-top: 0; margin-bottom: 4rem;">
+      <h2 class="grid-title">Featured Artists</h2>
+      <p class="grid-subtitle">The curators, creators, and visual voices behind our showcases</p>
+    </div>
+
+    <div class="artists-list-grid">
+      
+      <!-- Artist 1: Andrew Abballe -->
+      <div class="artist-card-row">
+        <div class="artist-photo-col">
+          <div class="artist-photo-wrapper">
+            <span class="artist-medium-tag">Oil &amp; Mixed Media</span>
+            <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/abballe_promo.jpg" alt="Andrew Abballe curator portrait">
+          </div>
+        </div>
+        <div class="artist-info-col">
+          <h2 class="artist-meta-title">Andrew Abballe</h2>
+          <p class="artist-meta-sub">Contemporary Classical Baroque Painter</p>
+          <div class="artist-bio-body">
+            <p>Andrew Abballe is a rising Canadian artist whose work bridges time-honored oil painting traditions with a distinctly modern, street-level flair. Inspired by classical realism, baroque emotionalism, and urban pop textures, Andrew crafts deep mixed-media compositions that explore memory, identity, and the passing of time.</p>
+            <p>His recent solo showcase at The Boxx featured rich portraits layered on heavy backdrops, capturing a dialogue between centuries of craftsmanship and contemporary Canadian expression.</p>
+            <div class="artist-quote-box">
+              <p>"My practice is a collision of reverence and rebellion—respecting the classical masters while carving a lane that represents the raw emotions of our current generation."</p>
+            </div>
+          </div>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="artist-action-btn">
+            <span>View Homepage Spotlight</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Artist 2: Louie Chiaino -->
+      <div class="artist-card-row">
+        <div class="artist-photo-col">
+          <div class="artist-photo-wrapper">
+            <span class="artist-medium-tag">Curator &amp; Design Collector</span>
+            <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/artist_louie_chiaino.png" alt="Louie Chiaino curator portrait">
+          </div>
+        </div>
+        <div class="artist-info-col">
+          <h2 class="artist-meta-title">Louie Chiaino</h2>
+          <p class="artist-meta-sub">Collector &amp; Curator of Moka Amore</p>
+          <div class="artist-bio-body">
+            <p>Louie Chiaino is a design curator, collector, and design historian who is fascinated by everyday geometric objects. He scours estate sales, stranger's garages, vintage design forums, and front lawns across the continent to find industrial design treasures.</p>
+            <p>His flagship exhibition at The Boxx, <em>Moka Amore: More than just Nonna's Coffee Pot</em>, maps the geometry, aesthetic worth, and warm domestic memories attached to the Italian stovetop espresso pot.</p>
+            <div class="artist-quote-box">
+              <p>"The stovetop espresso maker is not merely an appliance; it is a monument of industrial art and a daily trigger of warm memories, scent, and community."</p>
+            </div>
+          </div>
+          <a href="#top" class="artist-action-btn">
+            <span>View Moka Amore Exhibit</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Artist 3: Sofia Vieri -->
+      <div class="artist-card-row">
+        <div class="artist-photo-col">
+          <div class="artist-photo-wrapper">
+            <span class="artist-medium-tag">Sculpture &amp; Ceramics</span>
+            <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/hero_gallery_3.png" alt="Sofia Vieri curator portrait" style="height: 380px; object-fit: cover;">
+          </div>
+        </div>
+        <div class="artist-info-col">
+          <h2 class="artist-meta-title">Sofia Vieri</h2>
+          <p class="artist-meta-sub">Abstract Spatial Sculptor</p>
+          <div class="artist-bio-body">
+            <p>Sofia Vieri is an abstract sculptor whose work questions boundary definitions and spatial containment. Using raw concrete, bent steel, and glazed porcelain, Vieri builds physical structures that play with balance and tension.</p>
+            <p>Her past group exhibition, <em>Infinite Dreams</em>, featured heavy geometric structures situated in the gallery center, forcing visitors to reconsider the boundaries of physical room dimensions.</p>
+            <div class="artist-quote-box">
+              <p>"I want my work to interact with the environment it inhabits. Sculptures should not just sit on a pedestal; they should alter the air around them."</p>
+            </div>
+          </div>
+          <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="artist-action-btn">
+            <span>Inquire About Availability</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VIP Ticket Waitlist Modal -->
+  <div id="tickets-modal" class="modal-backdrop">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-accent-badge">VIP Request</span>
+        <h3 class="modal-title">Join The Waiting List</h3>
+        <p class="modal-subtitle">Reserve your entry for Moka Amore at The Boxx</p>
+      </div>
+      <form id="waitlist-form">
+        <div class="form-group">
+          <label for="waitlist-name">Your Full Name</label>
+          <input type="text" id="waitlist-name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="waitlist-email">Email Address</label>
+          <input type="email" id="waitlist-email" placeholder="john@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="waitlist-date">Preferred Exhibition Date</label>
+          <select id="waitlist-date" required>
+            <option value="" disabled selected>Choose a session...</option>
+            <option value="Friday, April 19: 6:00 PM – 9:00 PM">Friday, April 19 &bull; 6:00 PM – 9:00 PM</option>
+            <option value="Saturday, April 20: 12:00 PM – 8:00 PM">Saturday, April 20 &bull; 12:00 PM – 8:00 PM</option>
+            <option value="Sunday, April 21: 12:00 PM – 4:00 PM">Sunday, April 21 &bull; 12:00 PM – 4:00 PM</option>
+          </select>
+        </div>
+        <button type="submit" class="waitlist-submit-btn">
+          <span>Join waiting list</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+      <!-- Success State Screen -->
+      <div class="modal-success-state" id="modal-success" style="display: none;">
+        <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <h4>You are registered!</h4>
+        <p>Thank you. We have registered your request for <strong id="success-date-val"></strong>.</p>
+        <p>A confirmation email has been sent to <strong id="success-email-val"></strong>. We will notify you when passes are released.</p>
+        <button type="button" class="modal-success-close-btn" id="modal-success-close-btn">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Fullscreen Lightbox -->
+  <div id="lightbox-modal" class="lightbox-backdrop">
+    <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close gallery">&times;</button>
+    <button class="lightbox-nav-btn prev" id="lightbox-prev" aria-label="Previous image">&#10094;</button>
+    <div class="lightbox-content-wrapper">
+      <img id="lightbox-img" src="" alt="Enlarged Artwork Preview">
+      <div class="lightbox-caption-box">
+        <h4 id="lightbox-title"></h4>
+        <p id="lightbox-artist">By Louie Chiaino</p>
+      </div>
+    </div>
+    <button class="lightbox-nav-btn next" id="lightbox-next" aria-label="Next image">&#10095;</button>
+  </div>
+
+<?php get_footer(); ?>
