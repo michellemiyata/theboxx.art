@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Page Header -->
-  <section class="exhibits-header" style="background-image: url('assets/hero_gallery_2.png');">
+  <section class="exhibits-header" style="background-image: url('<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/hero_gallery_2.png');">
     <div class="container">
       <h1 class="section-title" style="color: #ffffff; margin-bottom: 0;">Rental &amp; Show Rates</h1>
       <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; margin-top: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">A Full Service Art Exhibit Space</p>

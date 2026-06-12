@@ -557,6 +557,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxPrev = document.getElementById('lightbox-prev');
   const lightboxNext = document.getElementById('lightbox-next');
 
+  // Extra details elements
+  const lightboxMedium = document.getElementById('lightbox-medium');
+  const lightboxYear = document.getElementById('lightbox-year');
+  const lightboxDimensions = document.getElementById('lightbox-dimensions');
+  const lightboxPrice = document.getElementById('lightbox-price');
+  const lightboxPriceItem = document.getElementById('lightbox-price-item');
+  const lightboxDescription = document.getElementById('lightbox-description');
+
   let currentArtworkIndex = 0;
 
   if (artworkCards.length > 0 && lightboxModal) {
@@ -567,6 +575,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const title = card.querySelector('.artwork-meta h4');
       const artist = card.querySelector('.artwork-meta p');
 
+      const medium = card.getAttribute('data-medium');
+      const year = card.getAttribute('data-year');
+      const dimensions = card.getAttribute('data-dimensions');
+      const price = card.getAttribute('data-price');
+      const description = card.getAttribute('data-description');
+
       if (img && lightboxImg) {
         lightboxImg.src = img.src;
         lightboxImg.alt = img.alt || 'Artwork';
@@ -576,6 +590,26 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       if (artist && lightboxArtist) {
         lightboxArtist.textContent = artist.textContent;
+      }
+      if (lightboxMedium) {
+        lightboxMedium.textContent = medium || 'N/A';
+      }
+      if (lightboxYear) {
+        lightboxYear.textContent = year || 'N/A';
+      }
+      if (lightboxDimensions) {
+        lightboxDimensions.textContent = dimensions || 'N/A';
+      }
+      if (lightboxPrice && lightboxPriceItem) {
+        if (price) {
+          lightboxPrice.textContent = price;
+          lightboxPriceItem.style.display = 'block';
+        } else {
+          lightboxPriceItem.style.display = 'none';
+        }
+      }
+      if (lightboxDescription) {
+        lightboxDescription.textContent = description || '';
       }
     };
 
