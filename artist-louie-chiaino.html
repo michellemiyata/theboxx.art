@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Louie Chiaino | Artists | The Boxx Art Gallery</title>
+  <meta name="description" content="Learn about Louie Chiaino, the collector and curator of Moka Amore showing his collection at The Boxx.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <script>
+    if (!sessionStorage.getItem('theboxx_intro_seen')) {
+      document.body.classList.add('loading-active');
+    }
+  </script>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrapper">
+        <img src="assets/logo.png" alt="The Boxx Logo" class="preloader-logo-img">
+      </div>
+      <h1 class="preloader-title">THE BOXX</h1>
+      <div class="preloader-line-separator"></div>
+      <p class="preloader-subtitle">ART GALLERY</p>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/logo.png" alt="The Boxx Logo" class="nav-logo" style="height: 45px; width: auto; object-fit: contain;">
+      </a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="exhibitions.html">Exhibitions</a></li>
+          <li class="nav-item active"><a href="artists.html">Artists</a></li>
+          <li class="nav-item"><a href="rates.html">Rentals & Rates</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          
+          <li class="nav-socials mobile-only">
+            <a href="https://www.facebook.com/theboxx" class="nav-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/theboxx.art" class="nav-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/theboxx" class="nav-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-socials desktop-only">
+        <a href="https://www.facebook.com/theboxx" class="nav-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/theboxx.art" class="nav-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/theboxx" class="nav-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="exhibits-header" style="background-image: url('assets/exhibition_train.jpg');">
+    <div class="container">
+      <h1 class="section-title" style="color: #ffffff; margin-bottom: 0;">Louie Chiaino</h1>
+      <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; margin-top: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">Curator &amp; Design Collector</p>
+    </div>
+  </section>
+
+  <!-- Bio Section -->
+  <section class="section container">
+    <div class="artist-main-box" style="margin-top: 0; box-shadow: none; border: none; padding: 0;">
+      <div class="artist-portrait-column">
+        <div class="artist-portrait-img-wrapper" style="border: 1px solid var(--border-color);">
+          <img src="assets/artist_louie_chiaino.png" alt="Louie Chiaino Portrait" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+      <div class="artist-details-column" style="padding-left: 2rem;">
+        <h2 style="font-family: var(--font-title); font-size: 2rem; text-transform: uppercase; margin-bottom: 1rem;">Biography</h2>
+        <div class="artist-bio-text">
+          <p>
+            Louie Chiaino is a design curator, collector, and design historian who is fascinated by everyday geometric objects. He scours estate sales, stranger's garages, vintage design forums, and front lawns across the continent to find industrial design treasures.
+          </p>
+          <p>
+            Louie is bewitched by the contours of each treasured piece. He is fascinated by its history and enchanted with its cultural worth. His personal dance with the Moka stovetop espresso maker is a romantic one, reminiscent of warm memories of community, scent, and shared family tables.
+          </p>
+          
+          <blockquote class="artist-quote" style="margin-top: 2rem; margin-bottom: 2rem;">
+            <p>"The Moka is more than just Nonna's coffee pot—it is a geometric marvel, an icon of design, and a vessel of warm Italian memories."</p>
+            <cite>&mdash; Louie Chiaino</cite>
+          </blockquote>
+        </div>
+
+        <div style="margin-top: 3rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+          <h3 style="font-family: var(--font-title); font-size: 1.2rem; text-transform: uppercase; margin-bottom: 1rem;">Showcases at The Boxx</h3>
+          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1rem;">
+            <li>
+              <a href="exhibition-moka-amore.html" style="font-weight: 700; color: var(--primary-color); text-transform: uppercase; text-decoration: none; font-size: 0.95rem; display: flex; align-items: center;">
+                <i class="fa-solid fa-circle-check" style="margin-right: 10px;"></i> Moka Amore: More than just Nonna's Coffee Pot (Solo Exhibition) &rarr;
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Artist Gallery Grid -->
+    <div class="exhibition-grid-header" style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 4rem;">
+      <h3 class="grid-title">Louie's Gallery</h3>
+      <p class="grid-subtitle">Click on any piece to view details in the lightbox</p>
+    </div>
+    
+    <div class="image-grid" style="margin-top: 2rem; margin-bottom: 4rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+      <div class="image-grid-item-boxed artwork-card" data-index="0" data-medium="Screenprint on Canvas" data-year="2023" data-dimensions="24&quot; x 24&quot;" data-price="$450" data-description="An abstract geometric exploration of the iconic octagonal design, rendered in warm, sepia-toned screenprint layers.">
+        <div class="artwork-image-wrapper">
+          <img src="assets/moka_1.png" alt="Moka Amore Square Poster">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Moka Amore I</h4>
+          <p>Louie Chiaino</p>
+        </div>
+      </div>
+      <div class="image-grid-item-boxed artwork-card" data-index="1" data-medium="Acrylic & Silkscreen on Wood Panel" data-year="2023" data-dimensions="30&quot; x 30&quot;" data-price="$600" data-description="Showcasing the distinct green moka pot with a stark red handle, contrasting vibrant kitchen tones against a dark minimalist background.">
+        <div class="artwork-image-wrapper">
+          <img src="assets/moka_2.png" alt="Moka Amore Green Pot Red Handle Poster">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Moka Amore II</h4>
+          <p>Louie Chiaino</p>
+        </div>
+      </div>
+      <div class="image-grid-item-boxed artwork-card" data-index="2" data-medium="Mixed Media on Canvas" data-year="2024" data-dimensions="24&quot; x 36&quot;" data-price="$750" data-description="Highlighting the curved dome lid and textured aluminum surface of the classic Italian coffee maker.">
+        <div class="artwork-image-wrapper">
+          <img src="assets/moka_3.png" alt="Moka Amore Green Pot Dome Top Poster">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Moka Amore III</h4>
+          <p>Louie Chiaino</p>
+        </div>
+      </div>
+      <div class="image-grid-item-boxed artwork-card" data-index="3" data-medium="Hand-pulled Serigraph" data-year="2024" data-dimensions="20&quot; x 20&quot;" data-price="$350" data-description="A stylized, clean geometric study of the clover-top knob, emphasizing industrial utility.">
+        <div class="artwork-image-wrapper">
+          <img src="assets/moka_4.png" alt="Moka Amore Silver Pot Clover Top Poster">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Moka Amore IV</h4>
+          <p>Louie Chiaino</p>
+        </div>
+      </div>
+      <div class="image-grid-item-boxed artwork-card" data-index="4" data-medium="Oil & Collage on Canvas" data-year="2024" data-dimensions="36&quot; x 48&quot;" data-price="$1,200" data-description="A large-scale vertical study featuring the green pot against structured architectural lines.">
+        <div class="artwork-image-wrapper">
+          <img src="assets/moka_5.png" alt="Moka Amore Green Pot Vertical Poster">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Moka Amore V</h4>
+          <p>Louie Chiaino</p>
+        </div>
+      </div>
+      <div class="image-grid-item-boxed artwork-card" data-index="5" data-medium="Silkscreen Ink and Charcoal" data-year="2024" data-dimensions="36&quot; x 48&quot;" data-price="$1,100" data-description="The final piece in the series, capturing the raw metallic texture and shadows of the classic silver pot in high contrast.">
+        <div class="artwork-image-wrapper">
+          <img src="assets/moka_6.png" alt="Moka Amore Silver Pot Vertical Poster">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Moka Amore VI</h4>
+          <p>Louie Chiaino</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Fullscreen Lightbox -->
+  <div id="lightbox-modal" class="lightbox-backdrop">
+    <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close gallery">&times;</button>
+    <button class="lightbox-nav-btn prev" id="lightbox-prev" aria-label="Previous image">&#10094;</button>
+    <div class="lightbox-content-wrapper">
+      <div class="lightbox-img-col">
+        <img id="lightbox-img" src="" alt="Enlarged Artwork Preview">
+      </div>
+      <div class="lightbox-info-col">
+        <h3 id="lightbox-title"></h3>
+        <p class="artist" id="lightbox-artist"></p>
+        <ul class="lightbox-meta-list">
+          <li><strong>Medium</strong><span id="lightbox-medium"></span></li>
+          <li><strong>Year Created</strong><span id="lightbox-year"></span></li>
+          <li><strong>Dimensions</strong><span id="lightbox-dimensions"></span></li>
+          <li id="lightbox-price-item"><strong>Price</strong><span id="lightbox-price"></span></li>
+        </ul>
+        <p class="desc" id="lightbox-description"></p>
+      </div>
+    </div>
+    <button class="lightbox-nav-btn next" id="lightbox-next" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/logo.png" alt="The Boxx Logo" style="height: 60px; width: auto; object-fit: contain; margin-bottom: 1.5rem; filter: brightness(0) invert(1);">
+          <p>A contemporary gallery hosting boundary-pushing physical exhibitions, augmented reality displays, and custom studio event rentals in Concord/Vaughan.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/theboxx" class="footer-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/theboxx.art" class="footer-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/theboxx" class="footer-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="rates.html">Rentals & Rates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Gallery Hours</h4>
+          <p>Tue – Thu: 9:00 AM – 7:00 PM</p>
+          <p>Fri – Sat: 9:00 AM – 5:00 PM</p>
+          <p>Sun: 8:00 AM – 6:00 PM</p>
+          <p style="color: var(--primary-color);">Monday: Closed</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Address</h4>
+          <p>207 Edgeley Blvd, Unit #8<br>Concord, Vaughan, ON<br>L4K 4B5</p>
+          <p><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>info@theboxx.art</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Boxx Art Gallery. All rights reserved.</p>
+        <p>Designed for Accessibility &amp; Contemporary Excellence</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Controllers -->
+  <script src="script.js"></script>
+</body>
+</html>

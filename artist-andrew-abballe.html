@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Abballe | Artists | The Boxx Art Gallery</title>
+  <meta name="description" content="Learn about Andrew Abballe, a contemporary Canadian classical baroque painter showcasing his works at The Boxx.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <script>
+    if (!sessionStorage.getItem('theboxx_intro_seen')) {
+      document.body.classList.add('loading-active');
+    }
+  </script>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrapper">
+        <img src="assets/logo.png" alt="The Boxx Logo" class="preloader-logo-img">
+      </div>
+      <h1 class="preloader-title">THE BOXX</h1>
+      <div class="preloader-line-separator"></div>
+      <p class="preloader-subtitle">ART GALLERY</p>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/logo.png" alt="The Boxx Logo" class="nav-logo" style="height: 45px; width: auto; object-fit: contain;">
+      </a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="exhibitions.html">Exhibitions</a></li>
+          <li class="nav-item active"><a href="artists.html">Artists</a></li>
+          <li class="nav-item"><a href="rates.html">Rentals & Rates</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          
+          <li class="nav-socials mobile-only">
+            <a href="https://www.facebook.com/theboxx" class="nav-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/theboxx.art" class="nav-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/theboxx" class="nav-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-socials desktop-only">
+        <a href="https://www.facebook.com/theboxx" class="nav-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/theboxx.art" class="nav-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/theboxx" class="nav-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="exhibits-header" style="background-image: url('assets/abballe_promo.jpg');">
+    <div class="container">
+      <h1 class="section-title" style="color: #ffffff; margin-bottom: 0;">Andrew Abballe</h1>
+      <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; margin-top: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">Oil &amp; Mixed Media Painter</p>
+    </div>
+  </section>
+
+  <!-- Bio Section -->
+  <section class="section container">
+    <div class="artist-main-box" style="margin-top: 0; box-shadow: none; border: none; padding: 0;">
+      <div class="artist-portrait-column">
+        <div class="artist-portrait-img-wrapper" style="border: 1px solid var(--border-color);">
+          <img src="assets/abballe_portrait.jpg" alt="Andrew Abballe Portrait" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+      <div class="artist-details-column" style="padding-left: 2rem;">
+        <h2 style="font-family: var(--font-title); font-size: 2rem; text-transform: uppercase; margin-bottom: 1rem;">Biography</h2>
+        <div class="artist-bio-text">
+          <p>
+            Andrew Abballe is a rising Canadian artist whose work bridges time-honored oil painting traditions with a distinctly modern, street-level flair. Inspired by classical realism, baroque emotionalism, and urban pop textures, Andrew crafts deep mixed-media compositions that explore memory, identity, and the passing of time.
+          </p>
+          <p>
+            Using layers of gesso, gold foils, and classical pigments on canvas and wood panel substrates, Andrew's paintings reflect structural depth and material resilience. His practice forces the classical masters into dialogue with contemporary Canadian expressions.
+          </p>
+          
+          <blockquote class="artist-quote" style="margin-top: 2rem; margin-bottom: 2rem;">
+            <p>"My practice is a collision of reverence and rebellion—respecting the master techniques of classical oil painting while carving a lane that represents the raw emotions of our current generation."</p>
+            <cite>&mdash; Andrew Abballe</cite>
+          </blockquote>
+        </div>
+
+        <div style="margin-top: 3rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+          <h3 style="font-family: var(--font-title); font-size: 1.2rem; text-transform: uppercase; margin-bottom: 1rem;">Showcases at The Boxx</h3>
+          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1rem;">
+            <li>
+              <a href="exhibition-abballe.html" style="font-weight: 700; color: var(--primary-color); text-transform: uppercase; text-decoration: none; font-size: 0.95rem; display: flex; align-items: center;">
+                <i class="fa-solid fa-circle-check" style="margin-right: 10px;"></i> ABBALLE Art Exhibition (Solo Showcase) &rarr;
+              </a>
+            </li>
+            <li>
+              <a href="exhibition-ritratti-del-mito.html" style="font-weight: 700; color: var(--primary-color); text-transform: uppercase; text-decoration: none; font-size: 0.95rem; display: flex; align-items: center;">
+                <i class="fa-solid fa-circle-check" style="margin-right: 10px;"></i> EOS Ritratti del Mito (Mixed-Media Showcase) &rarr;
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Artist Gallery Grid -->
+    <div class="exhibition-grid-header" style="margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 4rem;">
+      <h3 class="grid-title">Andrew's Gallery</h3>
+      <p class="grid-subtitle">Click on any piece to view details in the lightbox</p>
+    </div>
+    
+    <div class="image-grid" style="margin-top: 2rem; margin-bottom: 4rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+      <div class="image-grid-item-boxed artwork-card" data-index="0" data-medium="Oil on Canvas" data-year="2022" data-dimensions="40&quot; x 50&quot;" data-price="$2,400" data-description="A stunning, layered cityscape capturing the visual noise and light trails of urban transit systems.">
+        <div class="artwork-image-wrapper">
+          <img src="assets/abballe_portrait.jpg" alt="Transit Reflections">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Transit Reflections</h4>
+          <p>Andrew Abballe</p>
+        </div>
+      </div>
+      <div class="image-grid-item-boxed artwork-card" data-index="1" data-medium="Mixed Media on Wood Panel" data-year="2023" data-dimensions="36&quot; x 36&quot;" data-price="$1,850" data-description="An energetic combination of spray paint, acrylic, and collage elements representing structural tension and movement.">
+        <div class="artwork-image-wrapper">
+          <img src="assets/abballe_promo.jpg" alt="Collision and Rebellion">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Collision and Rebellion</h4>
+          <p>Andrew Abballe</p>
+        </div>
+      </div>
+      <div class="image-grid-item-boxed artwork-card" data-index="2" data-medium="Mixed Media on Plywood" data-year="2017" data-dimensions="21cm x 30cm (8.3&quot; x 11.8&quot;)" data-price="$400" data-description="An evocative miniature mixed media piece on plywood from the &quot;Ritratti del Mito&quot; collection, layering gesso, oil wash, and graphite to evoke classical mythological figures.">
+        <div class="artwork-image-wrapper">
+          <img src="assets/EOS-Ritratti-del-Mito-2017-cm-21x30-tecnica-mista-su-compensato-E-350_400.jpeg" alt="Ritratti del Mito I">
+          <div class="artwork-hover-overlay">
+            <span class="view-artwork-btn"><i class="fa-solid fa-expand"></i> View Details</span>
+          </div>
+        </div>
+        <div class="artwork-meta">
+          <h4>Ritratti del Mito I</h4>
+          <p>Andrew Abballe</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Fullscreen Lightbox -->
+  <div id="lightbox-modal" class="lightbox-backdrop">
+    <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close gallery">&times;</button>
+    <button class="lightbox-nav-btn prev" id="lightbox-prev" aria-label="Previous image">&#10094;</button>
+    <div class="lightbox-content-wrapper">
+      <div class="lightbox-img-col">
+        <img id="lightbox-img" src="" alt="Enlarged Artwork Preview">
+      </div>
+      <div class="lightbox-info-col">
+        <h3 id="lightbox-title"></h3>
+        <p class="artist" id="lightbox-artist"></p>
+        <ul class="lightbox-meta-list">
+          <li><strong>Medium</strong><span id="lightbox-medium"></span></li>
+          <li><strong>Year Created</strong><span id="lightbox-year"></span></li>
+          <li><strong>Dimensions</strong><span id="lightbox-dimensions"></span></li>
+          <li id="lightbox-price-item"><strong>Price</strong><span id="lightbox-price"></span></li>
+        </ul>
+        <p class="desc" id="lightbox-description"></p>
+      </div>
+    </div>
+    <button class="lightbox-nav-btn next" id="lightbox-next" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/logo.png" alt="The Boxx Logo" style="height: 60px; width: auto; object-fit: contain; margin-bottom: 1.5rem; filter: brightness(0) invert(1);">
+          <p>A contemporary gallery hosting boundary-pushing physical exhibitions, augmented reality displays, and custom studio event rentals in Concord/Vaughan.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/theboxx" class="footer-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/theboxx.art" class="footer-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/theboxx" class="footer-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="rates.html">Rentals & Rates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Gallery Hours</h4>
+          <p>Tue – Thu: 9:00 AM – 7:00 PM</p>
+          <p>Fri – Sat: 9:00 AM – 5:00 PM</p>
+          <p>Sun: 8:00 AM – 6:00 PM</p>
+          <p style="color: var(--primary-color);">Monday: Closed</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Address</h4>
+          <p>207 Edgeley Blvd, Unit #8<br>Concord, Vaughan, ON<br>L4K 4B5</p>
+          <p><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>info@theboxx.art</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Boxx Art Gallery. All rights reserved.</p>
+        <p>Designed for Accessibility &amp; Contemporary Excellence</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Controllers -->
+  <script src="script.js"></script>
+</body>
+</html>

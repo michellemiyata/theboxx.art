@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Artists | The Boxx Art Gallery</title>
+  <meta name="description" content="Meet the creators, collectors, and design historians showcasing at The Boxx. Learn about Andrew Abballe, Louie Chiaino, and Sofia Vieri.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <script>
+    if (!sessionStorage.getItem('theboxx_intro_seen')) {
+      document.body.classList.add('loading-active');
+    }
+  </script>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrapper">
+        <img src="assets/logo.png" alt="The Boxx Logo" class="preloader-logo-img">
+      </div>
+      <h1 class="preloader-title">THE BOXX</h1>
+      <div class="preloader-line-separator"></div>
+      <p class="preloader-subtitle">ART GALLERY</p>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/logo.png" alt="The Boxx Logo" class="nav-logo" style="height: 45px; width: auto; object-fit: contain;">
+      </a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="exhibitions.html">Exhibitions</a></li>
+          <li class="nav-item active"><a href="artists.html">Artists</a></li>
+          <li class="nav-item"><a href="rates.html">Rentals & Rates</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          
+          <li class="nav-socials mobile-only">
+            <a href="https://www.facebook.com/theboxx" class="nav-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/theboxx.art" class="nav-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/theboxx" class="nav-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-socials desktop-only">
+        <a href="https://www.facebook.com/theboxx" class="nav-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/theboxx.art" class="nav-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/theboxx" class="nav-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="exhibits-header" style="background-image: url('assets/leadership-banner.jpeg');">
+    <div class="container">
+      <h1 class="section-title" style="color: #ffffff; margin-bottom: 0;">Featured Artists</h1>
+      <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; margin-top: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">Meet the Creators &amp; Curators of The Boxx</p>
+    </div>
+  </section>
+
+  <!-- Main Artists Grid -->
+  <section class="section container">
+    <div class="exhibition-grid-header" style="margin-top: 0; margin-bottom: 4rem;">
+      <h2 class="grid-title">Featured Artists</h2>
+      <p class="grid-subtitle">Explore biographies, design quotes, and recent showcases by our roster of creators.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+      
+      <!-- Artist 1: Andrew Abballe -->
+      <div class="past-exhibit-card" style="background: #ffffff; border: 1px solid var(--border-color); padding: 0.75rem; display: flex; flex-direction: column; cursor: pointer; transition: var(--transition-smooth);" onclick="location.href='artist-andrew-abballe.html'">
+        <div style="overflow: hidden; height: 350px; border-bottom: 1px solid var(--border-color); position: relative;">
+          <img src="assets/abballe_portrait.jpg" alt="Andrew Abballe" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth); filter: grayscale(100%);">
+          <span style="position: absolute; bottom: 1rem; left: 1rem; background: #000000; color: #ffffff; padding: 0.4rem 0.8rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Oil &amp; Mixed Media</span>
+        </div>
+        <div style="padding: 1.5rem 0.5rem 0.5rem 0.5rem;">
+          <h3 style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Andrew Abballe</h3>
+          <p style="font-style: italic; font-size: 0.9rem; margin-bottom: 1rem; color: var(--primary-color);">Contemporary Realism &amp; Urban Pop</p>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light); margin-bottom: 1.5rem;">Bridging time-honored oil painting traditions with raw master realism and contemporary Canadian pop textures.</p>
+          <span class="btn-primary" style="display: inline-block; padding: 0.6rem 1.2rem; font-size: 0.8rem; border-color: var(--text-dark); background: transparent; color: var(--text-dark); text-align: center; width: 100%;">View Artist Profile</span>
+        </div>
+      </div>
+
+      <!-- Artist 2: Louie Chiaino -->
+      <div class="past-exhibit-card" style="background: #ffffff; border: 1px solid var(--border-color); padding: 0.75rem; display: flex; flex-direction: column; cursor: pointer; transition: var(--transition-smooth);" onclick="location.href='artist-louie-chiaino.html'">
+        <div style="overflow: hidden; height: 350px; border-bottom: 1px solid var(--border-color); position: relative;">
+          <img src="assets/artist_louie_chiaino.png" alt="Louie Chiaino" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth); filter: grayscale(100%);">
+          <span style="position: absolute; bottom: 1rem; left: 1rem; background: #000000; color: #ffffff; padding: 0.4rem 0.8rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Curator &amp; Design Collector</span>
+        </div>
+        <div style="padding: 1.5rem 0.5rem 0.5rem 0.5rem;">
+          <h3 style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Louie Chiaino</h3>
+          <p style="font-style: italic; font-size: 0.9rem; margin-bottom: 1rem; color: var(--primary-color);">Design History &amp; Collectibles</p>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light); margin-bottom: 1.5rem;">A passionate visual design archivist mapping the emotional resonance and cultural worth of everyday items.</p>
+          <span class="btn-primary" style="display: inline-block; padding: 0.6rem 1.2rem; font-size: 0.8rem; border-color: var(--text-dark); background: transparent; color: var(--text-dark); text-align: center; width: 100%;">View Artist Profile</span>
+        </div>
+      </div>
+
+      <!-- Artist 3: Sofia Vieri -->
+      <div class="past-exhibit-card" style="background: #ffffff; border: 1px solid var(--border-color); padding: 0.75rem; display: flex; flex-direction: column; cursor: pointer; transition: var(--transition-smooth);" onclick="location.href='artist-sofia-vieri.html'">
+        <div style="overflow: hidden; height: 350px; border-bottom: 1px solid var(--border-color); position: relative;">
+          <img src="assets/hero_gallery_3.png" alt="Sofia Vieri" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth); filter: grayscale(100%);">
+          <span style="position: absolute; bottom: 1rem; left: 1rem; background: #000000; color: #ffffff; padding: 0.4rem 0.8rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Sculpture &amp; Ceramics</span>
+        </div>
+        <div style="padding: 1.5rem 0.5rem 0.5rem 0.5rem;">
+          <h3 style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Sofia Vieri</h3>
+          <p style="font-style: italic; font-size: 0.9rem; margin-bottom: 1rem; color: var(--primary-color);">Abstract Space &amp; Tension</p>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light); margin-bottom: 1.5rem;">Building physical structures from raw concrete, bent steel, and glazed porcelain to challenge boundaries.</p>
+          <span class="btn-primary" style="display: inline-block; padding: 0.6rem 1.2rem; font-size: 0.8rem; border-color: var(--text-dark); background: transparent; color: var(--text-dark); text-align: center; width: 100%;">View Artist Profile</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/logo.png" alt="The Boxx Logo" style="height: 60px; width: auto; object-fit: contain; margin-bottom: 1.5rem; filter: brightness(0) invert(1);">
+          <p>A contemporary gallery hosting boundary-pushing physical exhibitions, augmented reality displays, and custom studio event rentals in Concord/Vaughan.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/theboxx" class="footer-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/theboxx.art" class="footer-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/theboxx" class="footer-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="rates.html">Rentals & Rates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Gallery Hours</h4>
+          <p>Tue – Thu: 9:00 AM – 7:00 PM</p>
+          <p>Fri – Sat: 9:00 AM – 5:00 PM</p>
+          <p>Sun: 8:00 AM – 6:00 PM</p>
+          <p style="color: var(--primary-color);">Monday: Closed</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Address</h4>
+          <p>207 Edgeley Blvd, Unit #8<br>Concord, Vaughan, ON<br>L4K 4B5</p>
+          <p><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>info@theboxx.art</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Boxx Art Gallery. All rights reserved.</p>
+        <p>Designed for Accessibility &amp; Contemporary Excellence</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Controllers -->
+  <script src="script.js"></script>
+</body>
+</html>
