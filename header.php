@@ -43,7 +43,7 @@
           <li class="nav-item <?php echo is_page('contact') ? 'active' : ''; ?>"><a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Contact</a></li>
           
           <!-- Mobile Social Links -->
-          <li class="nav-socials mobile-only">
+          <li class="nav-socials mobile-only" style="display: none;">
             <a href="https://www.facebook.com/theboxx" class="nav-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/theboxx.art" class="nav-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="https://x.com/theboxx" class="nav-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>

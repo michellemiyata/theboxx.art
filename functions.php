@@ -40,7 +40,7 @@ function theboxx_scripts() {
     wp_enqueue_style( 'theboxx-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap', array(), null );
 
     // FontAwesome Icons
-    wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', array(), '6.4.0' );
+    wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css', array(), '6.4.0' );
 
     // Main stylesheet (declares dependency on bricks-frontend if available)
     $deps = array( 'theboxx-fonts', 'font-awesome' );

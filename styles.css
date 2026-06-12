@@ -172,6 +172,15 @@ a {
   transform: translateY(-2px);
 }
 
+/* Media query utility classes for showing/hiding elements */
+.mobile-only {
+  display: none !important;
+}
+
+.desktop-only {
+  display: flex !important;
+}
+
 /* Hamburger Menu button */
 .nav-hamburger {
   display: none;
@@ -1528,6 +1537,14 @@ textarea.form-control {
 }
 
 @media (max-width: 767px) {
+  .mobile-only {
+    display: flex !important;
+  }
+  
+  .desktop-only {
+    display: none !important;
+  }
+
   :root {
     --header-height: 70px;
   }
