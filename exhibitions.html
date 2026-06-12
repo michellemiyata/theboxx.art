@@ -76,15 +76,14 @@
     </div>
   </section>
 
-  <!-- Main Exhibitions Grid -->
-  <section class="section container">
-    <div class="exhibition-grid-header" style="margin-top: 0; margin-bottom: 4rem;">
-      <h2 class="grid-title">All Exhibitions</h2>
-      <p class="grid-subtitle">Click on any card to view detailed showtimes, curator profiles, and featured artworks.</p>
+  <!-- Current Exhibitions Section -->
+  <section class="section container" style="padding-bottom: 2rem;">
+    <div class="exhibition-grid-header" style="margin-top: 0; margin-bottom: 3rem;">
+      <h2 class="grid-title" style="color: var(--primary-color);">Current Exhibitions</h2>
+      <p class="grid-subtitle">Explore our current featured showcase at The Boxx.</p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem;">
-      
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; justify-content: start; max-width: 400px; margin-bottom: 2rem;">
       <!-- Current/Featured Exhibition: Moka Amore -->
       <div class="past-exhibit-card" style="background: #ffffff; border: 1px solid var(--border-color); padding: 0.75rem; display: flex; flex-direction: column; cursor: pointer; transition: var(--transition-smooth);" onclick="location.href='exhibition-moka-amore.html'">
         <div style="position: relative; overflow: hidden; height: 320px; border-bottom: 1px solid var(--border-color); margin-bottom: 1.25rem;">
@@ -98,7 +97,21 @@
           <span class="btn-primary" style="text-align: center; display: block; width: 100%;">View Details &amp; Tickets</span>
         </div>
       </div>
+    </div>
+  </section>
 
+  <!-- Section Divider -->
+  <div class="container"><hr style="border: 0; border-top: 1px solid var(--border-color); margin: 0;"></div>
+
+  <!-- Past Exhibitions Section -->
+  <section class="section container" style="padding-top: 4rem;">
+    <div class="exhibition-grid-header" style="margin-top: 0; margin-bottom: 3rem;">
+      <h2 class="grid-title">Past Exhibitions</h2>
+      <p class="grid-subtitle">A collection of previous showcases hosted at The Boxx. Click on any card to view detailed showtimes, curator profiles, and featured artworks.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem;">
+      
       <!-- Past Exhibition 1: ABBALLE Art Exhibition -->
       <div class="past-exhibit-card" style="background: #ffffff; border: 1px solid var(--border-color); padding: 0.75rem; display: flex; flex-direction: column; cursor: pointer; transition: var(--transition-smooth);" onclick="location.href='exhibition-abballe.html'">
         <div style="position: relative; overflow: hidden; height: 320px; border-bottom: 1px solid var(--border-color); margin-bottom: 1.25rem;">
