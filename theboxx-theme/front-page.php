@@ -1,0 +1,402 @@
+<?php get_header(); ?>
+
+<!-- Hero Slider (5 Images) -->
+  <section class="hero-slider">
+    <div class="hero-slides">
+      
+      <!-- Slide 1: Gallery Interior Silhouette Mockup Slide -->
+      <div class="hero-slide active">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/gallery_interior.png" alt="The Boxx Art Space" class="hero-slide-img" style="object-position: center;">
+      </div>
+      
+      <!-- Slide 2: Portraits of Transit Exhibition -->
+      <div class="hero-slide">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/exhibition_train.jpg" alt="Portraits of Transit Exhibition" class="hero-slide-img">
+        <div class="container">
+          <div class="hero-slide-content">
+            <div class="hero-slide-num">02 / 06</div>
+            <h1 class="hero-slide-title">Portraits of <br>Transit</h1>
+            <p class="hero-slide-desc">A deep, contemplative exploration of human emotion and isolation captured behind rain-streaked windows and reflections.</p>
+            <a href="currentexhibits.html" class="btn-primary">Explore Exhibition</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/hero_gallery_2.png" alt="Contemporary art installation" class="hero-slide-img">
+        <div class="container">
+          <div class="hero-slide-content">
+            <div class="hero-slide-num">03 / 06</div>
+            <h1 class="hero-slide-title">Contemporary <br>Perspectives</h1>
+            <p class="hero-slide-desc">Discover inspiring installations and geometric sculptural pieces pushing the boundaries of space and material.</p>
+            <a href="rates.html" class="btn-primary">Host an Event</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="hero-slide">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/hero_gallery_3.png" alt="Minimalist monochrome paintings" class="hero-slide-img">
+        <div class="container">
+          <div class="hero-slide-content">
+            <div class="hero-slide-num">04 / 06</div>
+            <h1 class="hero-slide-title">Pure <br>Minimalism</h1>
+            <p class="hero-slide-desc">Explore the powerful dialogue between form and color harmony in curated solo artist features.</p>
+            <a href="currentexhibits.html" class="btn-primary">Featured Artists</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="hero-slide">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/hero_gallery_4.png" alt="Neon art exhibition room" class="hero-slide-img">
+        <div class="container">
+          <div class="hero-slide-content">
+            <div class="hero-slide-num">05 / 06</div>
+            <h1 class="hero-slide-title">Digital <br>Collision</h1>
+            <p class="hero-slide-desc">Step into the future where classical paintings interact with colorful custom projections and lights.</p>
+            <a href="currentexhibits.html" class="btn-primary">Explore Shows</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="hero-slide">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/hero_gallery_5.png" alt="Natural light skylight sculptures" class="hero-slide-img">
+        <div class="container">
+          <div class="hero-slide-content">
+            <div class="hero-slide-num">06 / 06</div>
+            <h1 class="hero-slide-title">Unbound <br>Creative Space</h1>
+            <p class="hero-slide-desc">High ceilings and natural light create a breathing studio and gallery space for creators and collectors alike.</p>
+            <a href="rates.html" class="btn-primary">Studio Rates</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Hero Controls -->
+    <button class="hero-arrow prev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="hero-arrow next" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+
+    <!-- Hero Pagination -->
+    <div class="hero-pagination">
+      <span class="hero-dot active"></span>
+      <span class="hero-dot"></span>
+      <span class="hero-dot"></span>
+      <span class="hero-dot"></span>
+      <span class="hero-dot"></span>
+      <span class="hero-dot"></span>
+    </div>
+
+    <!-- Shape Divider at Bottom of Hero -->
+    <div class="section-divider section-divider-bottom section-divider-curve-white">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Featured Exhibit Section -->
+  <section class="section container">
+    <h2 class="section-title">Featured Exhibit</h2>
+    <p class="section-subtitle">Discover our spotlight show highlighting pioneering Canadian visual arts.</p>
+    
+    <div class="featured-exhibit-block">
+      <!-- Image Showcase Carousel as requested in notes -->
+      <div class="featured-exhibit-gallery" style="border: 2px solid var(--text-dark);">
+        <div class="featured-exhibit-slider">
+          <!-- Slide 1: Andrew Abballe Poster Flyer (cropped to show artwork only) -->
+          <div class="featured-exhibit-slide active">
+            <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/abballe_promo.jpg" alt="Andrew Abballe Exhibition Promo Poster" style="object-position: left; object-fit: cover;">
+          </div>
+          <!-- Slide 2: Andrew Abballe Artwork Piece -->
+          <div class="featured-exhibit-slide">
+            <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/abballe_portrait.jpg" alt="Andrew Abballe Artwork Portrait Piece" style="object-position: center; object-fit: cover;">
+          </div>
+        </div>
+        
+        <!-- Slide Controls -->
+        <div class="featured-exhibit-arrows">
+          <button class="featured-exhibit-arrow" id="feat-prev" aria-label="Previous Featured Artwork" style="border: 1px solid var(--text-dark);"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="featured-exhibit-arrow" id="feat-next" aria-label="Next Featured Artwork" style="border: 1px solid var(--text-dark);"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+      
+      <!-- Text details -->
+      <div class="featured-exhibit-text">
+        <span class="floating-badge">Curated Spotlight</span>
+        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; line-height: 1.2;">ABBALLE:<br>Art Exhibition</h3>
+        <blockquote>
+          Step into the BOXX for a collision of contemporary, classical, baroque, and colloquial art. The ABBALLE Art Exhibition spotlights the refined work of Andrew Abballe, a rising Canadian artist whose practice bridges time-honoured craftsmanship with a distinctly modern flair.
+        </blockquote>
+        
+        <div class="featured-exhibit-details">
+          <h4 style="margin-bottom: 0.75rem; font-weight: 800; color: var(--text-dark); letter-spacing: 1px;"><i class="fa-solid fa-calendar-days" style="color: var(--primary-color); margin-right: 8px;"></i> Show dates</h4>
+          <p style="margin-bottom: 0.5rem; font-weight: 500;">Public Exhibition: September 19–21, 2025</p>
+          <p style="color: var(--primary-color); font-weight: 600; font-size: 1rem;"><i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i> BOXX Art Gallery, Vaughan (207 Edgely Blvd. Unit 8)</p>
+        </div>
+        
+        <a href="<?php echo esc_url( home_url( '/currentexhibits' ) ); ?>" class="btn-primary">Explore Exhibition</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Past Exhibits Section -->
+  <section class="section section-alt">
+    <div class="section-divider section-divider-top section-divider-curve">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,1,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; color: var(--primary-color);">Past Exhibits</h2>
+      <p class="section-subtitle" style="text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 3rem;">A look back at our curated historical showcases at The Boxx.</p>
+      
+      <div class="past-exhibits-container">
+        <div class="past-exhibits-slider">
+          <!-- Slide 1: Moka Amore -->
+          <div class="past-exhibit-slide">
+            <div class="past-exhibit-img">
+              <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/mokaamore_1080x1080.jpeg" alt="Moka Amore Exhibition">
+            </div>
+            <div class="past-exhibit-text">
+              <h3 style="font-weight: 800; text-transform: uppercase;">Moka Amore</h3>
+              <p style="font-weight: 600; color: var(--primary-color); text-transform: uppercase; font-size: 0.9rem; margin-bottom: 1.25rem;">Solo Exhibition</p>
+              <p>An exquisite exhibition of iconic Italian coffee makers mapping their history, unique geometry, and cultural worth.</p>
+              <a href="<?php echo esc_url( home_url( '/currentexhibits' ) ); ?>" class="btn-primary" style="display: inline-block;">View Details</a>
+            </div>
+          </div>
+          
+          <!-- Slide 2: Infinite Dreams -->
+          <div class="past-exhibit-slide">
+            <div class="past-exhibit-img">
+              <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/Infinite-Dreams-scaled.jpg" alt="Infinite Dreams Exhibition">
+            </div>
+            <div class="past-exhibit-text">
+              <h3 style="font-weight: 800; text-transform: uppercase;">Infinite Dreams</h3>
+              <p style="font-weight: 600; color: var(--primary-color); text-transform: uppercase; font-size: 0.9rem; margin-bottom: 1.25rem;">Group Exhibition</p>
+              <p>An abstract visual exploration of human consciousness, dreams, and spatial reflections by local Canadian artists.</p>
+              <a href="<?php echo esc_url( home_url( '/currentexhibits' ) ); ?>" class="btn-primary" style="display: inline-block;">View Details</a>
+            </div>
+          </div>
+          
+          <!-- Slide 3: EOS Ritratti del Mito -->
+          <div class="past-exhibit-slide">
+            <div class="past-exhibit-img">
+              <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/EOS-Ritratti-del-Mito-2017-cm-21x30-tecnica-mista-su-compensato-E-350_400.jpeg" alt="EOS Ritratti del Mito Exhibition">
+            </div>
+            <div class="past-exhibit-text">
+              <h3 style="font-weight: 800; text-transform: uppercase;">EOS Ritratti del Mito</h3>
+              <p style="font-weight: 600; color: var(--primary-color); text-transform: uppercase; font-size: 0.9rem; margin-bottom: 1.25rem;">Mixed-Media Showcase</p>
+              <p>A mixed-media showcase exploring mythology, classical portraits, and contemporary textures on wood plywood.</p>
+              <a href="<?php echo esc_url( home_url( '/currentexhibits' ) ); ?>" class="btn-primary" style="display: inline-block;">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Past Exhibits Controls -->
+      <div class="past-exhibits-controls">
+        <div class="past-exhibits-pagination">01 / 03</div>
+        <div class="past-exhibits-arrows">
+          <button class="past-exhibits-arrow" id="past-prev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="past-exhibits-arrow" id="past-next" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plan Your Show Section (Homepage Teaser) -->
+  <section class="section container">
+    <div class="plan-show-layout">
+      
+      <!-- Left Side Text & Image -->
+      <div class="plan-show-text">
+        <h2 style="font-size: 2.5rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1.5rem;">Plan Your Show</h2>
+        <p class="rates-hero-desc">Customize your exhibition or event at The Boxx with our full-service media, curatorial, and logistical packages. We handle the details so you can focus on the art.</p>
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/klee_painting.jpg" alt="Mit dem Ei by Paul Klee" style="width: 100%; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); margin-top: 2rem;">
+      </div>
+
+      <!-- Right Side List -->
+      <ul class="plan-show-list">
+        <li class="plan-show-item">
+          <span class="plan-show-name">Space A Rental (400 sq/ft)</span>
+          <span class="plan-show-price">$500 / Day</span>
+        </li>
+        <li class="plan-show-item">
+          <span class="plan-show-name">Space B Rental (900 sq/ft)</span>
+          <span class="plan-show-price">$800 / Day</span>
+        </li>
+        <li class="plan-show-item">
+          <span class="plan-show-name">Space C Rental (1,400 sq/ft)</span>
+          <span class="plan-show-price">$1,200 / Day</span>
+        </li>
+        <li class="plan-show-item">
+          <span class="plan-show-name">Live Webcasting Options</span>
+          <span class="plan-show-price">$1,000 – $2,500</span>
+        </li>
+        <li class="plan-show-item">
+          <span class="plan-show-name">Artistic Director Services</span>
+          <span class="plan-show-price">$150 / hr</span>
+        </li>
+        <li class="plan-show-item">
+          <span class="plan-show-name">Project Management Support</span>
+          <span class="plan-show-price">$150 / hr</span>
+        </li>
+        <li class="plan-show-item">
+          <span class="plan-show-name">1 Minute Exhibition Sizzle Video</span>
+          <span class="plan-show-price">$1,500</span>
+        </li>
+        <li class="plan-show-item">
+          <span class="plan-show-name">30 Second Promotional Video</span>
+          <span class="plan-show-price">$1,500</span>
+        </li>
+        <li class="plan-show-item">
+          <span class="plan-show-name">Audio Package (PA System + Speakers &amp; Mic)</span>
+          <span class="plan-show-price">$500</span>
+        </li>
+        <li class="plan-show-item">
+          <span class="plan-show-name">Liability Insurance Coverage</span>
+          <span class="plan-show-price">$500</span>
+        </li>
+        <li class="plan-show-item">
+          <span class="plan-show-name">Professional Emcee / Host</span>
+          <span class="plan-show-price">$1,000</span>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- Contact Us Section (Homepage) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="contact-layout" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: start;">
+        
+        <!-- Left Column: Form -->
+        <div class="contact-form-col">
+          <h2 class="section-title" style="margin-bottom: 1rem; text-align: left;">Contact Us</h2>
+          <p style="color: var(--text-light); margin-bottom: 2.5rem; font-size: 1.05rem;">Get in touch for studio rentals, artist submissions, and show bookings.</p>
+          
+          <div class="contact-form-box" style="background: #ffffff; padding: 2.5rem; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.02);">
+            <form id="homepage-contact-form">
+              <div class="contact-form-row" style="display: flex; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="form-group" style="flex: 1;">
+                  <label for="home-first-name">First Name *</label>
+                   <input type="text" id="home-first-name" class="form-control" placeholder="John" required>
+                 </div>
+                 <div class="form-group" style="flex: 1;">
+                   <label for="home-last-name">Last Name *</label>
+                   <input type="text" id="home-last-name" class="form-control" placeholder="Doe" required>
+                 </div>
+               </div>
+               
+               <div class="form-group" style="margin-bottom: 1.5rem;">
+                 <label for="home-email">Email Address *</label>
+                 <input type="email" id="home-email" class="form-control" placeholder="john.doe@example.com" required>
+               </div>
+               
+               <div class="form-group" style="margin-bottom: 2rem;">
+                 <label for="home-message">Message *</label>
+                 <textarea id="home-message" class="form-control" placeholder="Write your message here..." required style="height: 120px;"></textarea>
+               </div>
+               
+               <button type="submit" class="btn-submit" style="width: 100%;">Submit Message</button>
+             </form>
+           </div>
+         </div>
+
+         <!-- Right Column: Map & Info -->
+         <div class="contact-info-col">
+           <div class="map-container" style="height: 300px; border-radius: 4px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03); margin-top: 5rem;">
+             <iframe 
+               src="https://maps.google.com/maps?q=207%20Edgeley%20Blvd%2C%20Unit%20%238%20Concord%2C%20ON%20L4K%204B5&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near" 
+               title="207 Edgeley Blvd, Unit #8 Concord, ON L4K 4B5" 
+               aria-label="207 Edgeley Blvd, Unit #8 Concord, ON L4K 4B5"
+               allowfullscreen="" 
+               loading="lazy"
+               style="border: 0; width: 100%; height: 100%;">
+             </iframe>
+           </div>
+           
+           <div style="margin-top: 2rem;">
+             <p style="font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem; font-size: 0.9rem; letter-spacing: 1px; color: var(--primary-color);">Address</p>
+             <p style="font-size: 1.05rem; line-height: 1.6;">207 Edgeley Blvd, Unit #8<br>Concord, Vaughan, ON L4K 4B5</p>
+             <p style="margin-top: 1rem; font-size: 1.05rem;"><i class="fa-solid fa-envelope" style="margin-right: 8px; color: var(--primary-color);"></i>info@theboxx.art</p>
+           </div>
+         </div>
+
+       </div>
+     </div>
+   </section>
+
+   <!-- Social Media Slider Carousel (3 items front of footer) -->
+   <section class="section container">
+    <div style="text-align: center;">
+      <h2 class="section-title">The Boxx Feed</h2>
+      <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">Follow our social galleries across <a href="https://www.instagram.com/theboxx.art" target="_blank" style="color: var(--primary-color); text-decoration: underline; font-weight: 600;">Instagram</a>, <a href="https://www.facebook.com/theboxx" target="_blank" style="color: var(--primary-color); text-decoration: underline; font-weight: 600;">Facebook</a>, and <a href="https://x.com/theboxx" target="_blank" style="color: var(--primary-color); text-decoration: underline; font-weight: 600;">X</a> for daily inspiration.</p>
+    </div>
+
+    <div class="social-gallery-container">
+      <div class="social-slider">
+        
+        <!-- Social Slide 1 (Instagram) -->
+        <a href="https://www.instagram.com/theboxx.art" target="_blank" class="social-slide">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/instagram_1.png" alt="Exhibition Gold Foil Painting">
+          <div class="social-overlay">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram Post</span>
+          </div>
+        </a>
+
+        <!-- Social Slide 2 (Instagram) -->
+        <a href="https://www.instagram.com/theboxx.art" target="_blank" class="social-slide">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/instagram_2.png" alt="Green Light Gallery Installation">
+          <div class="social-overlay">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram Post</span>
+          </div>
+        </a>
+
+        <!-- Social Slide 3 (Instagram) -->
+        <a href="https://www.instagram.com/theboxx.art" target="_blank" class="social-slide">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/instagram_3.png" alt="Industrial Sculpture Exhibition Room">
+          <div class="social-overlay">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram Post</span>
+          </div>
+        </a>
+
+        <!-- Social Slide 4 (Instagram) -->
+        <a href="https://www.instagram.com/theboxx.art" target="_blank" class="social-slide">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/instagram_4.png" alt="Painting of Reclining Woman">
+          <div class="social-overlay">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram Post</span>
+          </div>
+        </a>
+
+        <!-- Social Slide 5 (Instagram) -->
+        <a href="https://www.instagram.com/theboxx.art" target="_blank" class="social-slide">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/instagram_5.png" alt="Abstract Black and White Print Canvas">
+          <div class="social-overlay">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram Post</span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Social Controls -->
+      <div class="social-controls">
+        <button class="social-arrow" id="social-prev" aria-label="Previous Social Photo"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="social-arrow" id="social-next" aria-label="Next Social Photo"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- High-Contrast Vertical Footer -->
+  
+<?php get_footer(); ?>
