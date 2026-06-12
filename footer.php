@@ -20,7 +20,8 @@
           <h4>Explore</h4>
           <ul class="footer-links">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/currentexhibits' ) ); ?>">Exhibitions</a></li>
+            <li><a href="<?php echo esc_url( get_post_type_archive_link( 'exhibition' ) ); ?>">Exhibitions</a></li>
+            <li><a href="<?php echo esc_url( get_post_type_archive_link( 'artist' ) ); ?>">Artists</a></li>
             <li><a href="<?php echo esc_url( home_url( '/rates' ) ); ?>">Rentals &amp; Rates</a></li>
             <li><a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Contact Us</a></li>
           </ul>

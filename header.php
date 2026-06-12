@@ -37,7 +37,8 @@
       <nav>
         <ul class="nav-menu">
           <li class="nav-item <?php echo is_front_page() ? 'active' : ''; ?>"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
-          <li class="nav-item <?php echo is_page('currentexhibits') || is_page('exhibitions') ? 'active' : ''; ?>"><a href="<?php echo esc_url( home_url( '/currentexhibits' ) ); ?>">Exhibitions</a></li>
+          <li class="nav-item <?php echo is_post_type_archive('exhibition') || is_singular('exhibition') ? 'active' : ''; ?>"><a href="<?php echo esc_url( get_post_type_archive_link( 'exhibition' ) ); ?>">Exhibitions</a></li>
+          <li class="nav-item <?php echo is_post_type_archive('artist') || is_singular('artist') ? 'active' : ''; ?>"><a href="<?php echo esc_url( get_post_type_archive_link( 'artist' ) ); ?>">Artists</a></li>
           <li class="nav-item <?php echo is_page('rates') ? 'active' : ''; ?>"><a href="<?php echo esc_url( home_url( '/rates' ) ); ?>">Rentals & Rates</a></li>
           <li class="nav-item <?php echo is_page('contact') ? 'active' : ''; ?>"><a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Contact</a></li>
           

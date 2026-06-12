@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exhibitions | The Boxx Art Gallery</title>
+  <meta name="description" content="Explore current and past art exhibitions at The Boxx. Discover Moka Amore, Andrew Abballe, Infinite Dreams, and more contemporary art showcases.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <script>
+    if (!sessionStorage.getItem('theboxx_intro_seen')) {
+      document.body.classList.add('loading-active');
+    }
+  </script>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrapper">
+        <img src="assets/logo.png" alt="The Boxx Logo" class="preloader-logo-img">
+      </div>
+      <h1 class="preloader-title">THE BOXX</h1>
+      <div class="preloader-line-separator"></div>
+      <p class="preloader-subtitle">ART GALLERY</p>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/logo.png" alt="The Boxx Logo" class="nav-logo" style="height: 45px; width: auto; object-fit: contain;">
+      </a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item active"><a href="exhibitions.html">Exhibitions</a></li>
+          <li class="nav-item"><a href="artists.html">Artists</a></li>
+          <li class="nav-item"><a href="rates.html">Rentals & Rates</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          
+          <li class="nav-socials mobile-only">
+            <a href="https://www.facebook.com/theboxx" class="nav-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/theboxx.art" class="nav-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/theboxx" class="nav-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-socials desktop-only">
+        <a href="https://www.facebook.com/theboxx" class="nav-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/theboxx.art" class="nav-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/theboxx" class="nav-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="exhibits-header" style="background-image: url('assets/exhibition_train.jpg');">
+    <div class="container">
+      <h1 class="section-title" style="color: #ffffff; margin-bottom: 0;">Our Exhibitions</h1>
+      <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; margin-top: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">Discover Curated Visual Arts at The Boxx</p>
+    </div>
+  </section>
+
+  <!-- Main Exhibitions Grid -->
+  <section class="section container">
+    <div class="exhibition-grid-header" style="margin-top: 0; margin-bottom: 4rem;">
+      <h2 class="grid-title">All Exhibitions</h2>
+      <p class="grid-subtitle">Click on any card to view detailed showtimes, curator profiles, and featured artworks.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem;">
+      
+      <!-- Current/Featured Exhibition: Moka Amore -->
+      <div class="past-exhibit-card" style="background: #ffffff; border: 1px solid var(--border-color); padding: 0.75rem; display: flex; flex-direction: column; cursor: pointer; transition: var(--transition-smooth);" onclick="location.href='exhibition-moka-amore.html'">
+        <div style="position: relative; overflow: hidden; height: 320px; border-bottom: 1px solid var(--border-color); margin-bottom: 1.25rem;">
+          <img src="assets/mokaamore_1080x1080.jpeg" alt="Moka Amore Exhibition" style="width: 100%; height: 100%; object-fit: cover;">
+          <span style="position: absolute; top: 1rem; left: 1rem; background: var(--primary-color); color: #ffffff; padding: 0.4rem 0.8rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Current Showcase</span>
+        </div>
+        <div style="padding: 0.5rem; text-align: left; flex-grow: 1; display: flex; flex-direction: column;">
+          <h3 style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Moka Amore</h3>
+          <p style="font-weight: 700; color: var(--primary-color); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 1rem;">Solo Exhibition &bull; Louie Chiaino</p>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light); margin-bottom: 1.5rem; flex-grow: 1;">An exquisite exhibition of iconic Italian coffee makers mapping their history, unique geometry, and cultural worth.</p>
+          <span class="btn-primary" style="text-align: center; display: block; width: 100%;">View Details &amp; Tickets</span>
+        </div>
+      </div>
+
+      <!-- Past Exhibition 1: ABBALLE Art Exhibition -->
+      <div class="past-exhibit-card" style="background: #ffffff; border: 1px solid var(--border-color); padding: 0.75rem; display: flex; flex-direction: column; cursor: pointer; transition: var(--transition-smooth);" onclick="location.href='exhibition-abballe.html'">
+        <div style="position: relative; overflow: hidden; height: 320px; border-bottom: 1px solid var(--border-color); margin-bottom: 1.25rem;">
+          <img src="assets/abballe_promo.jpg" alt="ABBALLE Art Exhibition" style="width: 100%; height: 100%; object-fit: cover;">
+          <span style="position: absolute; top: 1rem; left: 1rem; background: #333; color: #ffffff; padding: 0.4rem 0.8rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Past Show</span>
+        </div>
+        <div style="padding: 0.5rem; text-align: left; flex-grow: 1; display: flex; flex-direction: column;">
+          <h3 style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">ABBALLE Art Exhibition</h3>
+          <p style="font-weight: 700; color: var(--primary-color); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 1rem;">Solo Showcase &bull; Andrew Abballe</p>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light); margin-bottom: 1.5rem; flex-grow: 1;">A collision of contemporary, classical, baroque, and colloquial art featuring the refined works of Canadian painter Andrew Abballe.</p>
+          <span class="btn-primary" style="text-align: center; display: block; width: 100%;">View Exhibition Details</span>
+        </div>
+      </div>
+
+      <!-- Past Exhibition 2: Infinite Dreams -->
+      <div class="past-exhibit-card" style="background: #ffffff; border: 1px solid var(--border-color); padding: 0.75rem; display: flex; flex-direction: column; cursor: pointer; transition: var(--transition-smooth);" onclick="location.href='exhibition-infinite-dreams.html'">
+        <div style="position: relative; overflow: hidden; height: 320px; border-bottom: 1px solid var(--border-color); margin-bottom: 1.25rem;">
+          <img src="assets/Infinite-Dreams-scaled.jpg" alt="Infinite Dreams Exhibition" style="width: 100%; height: 100%; object-fit: cover;">
+          <span style="position: absolute; top: 1rem; left: 1rem; background: #333; color: #ffffff; padding: 0.4rem 0.8rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Past Show</span>
+        </div>
+        <div style="padding: 0.5rem; text-align: left; flex-grow: 1; display: flex; flex-direction: column;">
+          <h3 style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Infinite Dreams</h3>
+          <p style="font-weight: 700; color: var(--primary-color); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 1rem;">Group Exhibition &bull; Sofia Vieri &amp; Others</p>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light); margin-bottom: 1.5rem; flex-grow: 1;">An abstract visual exploration of human consciousness, dreams, and spatial reflections by rising local Canadian painters.</p>
+          <span class="btn-primary" style="text-align: center; display: block; width: 100%;">View Exhibition Details</span>
+        </div>
+      </div>
+
+      <!-- Past Exhibition 3: EOS Ritratti del Mito -->
+      <div class="past-exhibit-card" style="background: #ffffff; border: 1px solid var(--border-color); padding: 0.75rem; display: flex; flex-direction: column; cursor: pointer; transition: var(--transition-smooth);" onclick="location.href='exhibition-ritratti-del-mito.html'">
+        <div style="position: relative; overflow: hidden; height: 320px; border-bottom: 1px solid var(--border-color); margin-bottom: 1.25rem;">
+          <img src="assets/EOS-Ritratti-del-Mito-2017-cm-21x30-tecnica-mista-su-compensato-E-350_400.jpeg" alt="EOS Ritratti del Mito" style="width: 100%; height: 100%; object-fit: cover;">
+          <span style="position: absolute; top: 1rem; left: 1rem; background: #333; color: #ffffff; padding: 0.4rem 0.8rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Past Show</span>
+        </div>
+        <div style="padding: 0.5rem; text-align: left; flex-grow: 1; display: flex; flex-direction: column;">
+          <h3 style="font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">EOS Ritratti del Mito</h3>
+          <p style="font-weight: 700; color: var(--primary-color); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 1rem;">Mixed-Media Showcase &bull; Andrew Abballe &amp; Others</p>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-light); margin-bottom: 1.5rem; flex-grow: 1;">A mixed-media showcase exploring classical portraits, ancient mythology, and contemporary wooden panel textures.</p>
+          <span class="btn-primary" style="text-align: center; display: block; width: 100%;">View Exhibition Details</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/logo.png" alt="The Boxx Logo" style="height: 60px; width: auto; object-fit: contain; margin-bottom: 1.5rem; filter: brightness(0) invert(1);">
+          <p>A contemporary gallery hosting boundary-pushing physical exhibitions, augmented reality displays, and custom studio event rentals in Concord/Vaughan.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/theboxx" class="footer-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/theboxx.art" class="footer-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/theboxx" class="footer-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="rates.html">Rentals & Rates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Gallery Hours</h4>
+          <p>Tue – Thu: 9:00 AM – 7:00 PM</p>
+          <p>Fri – Sat: 9:00 AM – 5:00 PM</p>
+          <p>Sun: 8:00 AM – 6:00 PM</p>
+          <p style="color: var(--primary-color);">Monday: Closed</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Address</h4>
+          <p>207 Edgeley Blvd, Unit #8<br>Concord, Vaughan, ON<br>L4K 4B5</p>
+          <p><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>info@theboxx.art</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Boxx Art Gallery. All rights reserved.</p>
+        <p>Designed for Accessibility &amp; Contemporary Excellence</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Controllers -->
+  <script src="script.js"></script>
+</body>
+</html>
