@@ -195,10 +195,8 @@
             </div>
           </div>
         </div>
-      </div>
-      
-      <!-- Past Exhibits Controls -->
-      <div class="past-exhibits-controls">
+        </div>
+        </div>
         
         <div class="past-exhibits-arrows">
           <button class="past-exhibits-arrow" id="past-prev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
@@ -391,8 +389,8 @@
 
       <!-- Social Controls -->
       <div class="social-controls">
-        <button class="social-arrow" id="social-prev" aria-label="Previous Social Photo"><i class="fa-solid fa-arrow-left"></i></button>
-        <button class="social-arrow" id="social-next" aria-label="Next Social Photo"><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="social-arrow" id="social-prev" aria-label="Previous Social Photo"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="social-arrow" id="social-next" aria-label="Next Social Photo"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
   </section>
