@@ -196,7 +196,6 @@
           </div>
         </div>
         </div>
-        </div>
         
         <div class="past-exhibits-arrows">
           <button class="past-exhibits-arrow" id="past-prev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
