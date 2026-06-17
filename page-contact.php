@@ -36,6 +36,7 @@
             <p>Fri – Sat: 9:00 AM – 5:00 PM</p>
             <p>Sun: 8:00 AM – 6:00 PM</p>
             <p style="color: var(--primary-color); font-weight: 600;">Monday: Closed</p>
+            <p style="margin-top: 0.5rem;">[During Exhibition Hours Only]</p>
           </div>
 
         </div>

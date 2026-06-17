@@ -6,7 +6,7 @@
         <!-- Col 1: Brand -->
         <div class="footer-col">
           <!-- Logo in Footer -->
-          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/logo.png" alt="The Boxx Logo" style="height: 60px; width: auto; object-fit: contain; margin-bottom: 1.5rem; filter: brightness(0) invert(1);">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/logo.png" alt="The Boxx Logo" style="height: 60px; width: auto; object-fit: contain; margin-bottom: 1.5rem; background-color: #ffffff; padding: 6px; border-radius: 2px;">
           <p>A contemporary gallery hosting boundary-pushing physical exhibitions, augmented reality displays, and custom studio event rentals in Concord/Vaughan.</p>
           <div class="footer-socials">
             <a href="https://www.facebook.com/theboxx" class="footer-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -20,9 +20,8 @@
           <h4>Explore</h4>
           <ul class="footer-links">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
-            <li><a href="<?php echo esc_url( get_post_type_archive_link( 'exhibition' ) ); ?>">Exhibitions</a></li>
-            <li><a href="<?php echo esc_url( get_post_type_archive_link( 'artist' ) ); ?>">Artists</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/rates' ) ); ?>">Rentals &amp; Rates</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/currentexhibits' ) ); ?>">Exhibitions</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/rates' ) ); ?>">Gallery and Event Bookings</a></li>
             <li><a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Contact Us</a></li>
           </ul>
         </div>
@@ -34,6 +33,7 @@
           <p>Fri – Sat: 9:00 AM – 5:00 PM</p>
           <p>Sun: 8:00 AM – 6:00 PM</p>
           <p style="color: var(--primary-color);">Monday: Closed</p>
+          <p>[Exhibition Hours or By Appointment]</p>
         </div>
 
         <!-- Col 4: Location -->
@@ -47,7 +47,7 @@
 
       <div class="footer-bottom">
         <p>&copy; <?php echo date('Y'); ?> The Boxx Art Gallery. All rights reserved.</p>
-        <p>Designed for Accessibility &amp; Contemporary Excellence</p>
+        <p>Powered by C3 Labs</p>
       </div>
     </div>
   </footer>

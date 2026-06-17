@@ -1,105 +1,16 @@
 <?php get_header(); ?>
 
 <!-- Page Header -->
-  <section class="exhibits-header" style="background-image: url('<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/hero_gallery_2.png');">
+  <section class="exhibits-header" style="background-image: url('assets/hero_gallery_2.png');">
     <div class="container">
-      <h1 class="section-title" style="color: #ffffff; margin-bottom: 0;">Rental &amp; Show Rates</h1>
+      <h1 class="section-title" style="color: #ffffff; margin-bottom: 0;">Gallery and Event Bookings</h1>
       <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; margin-top: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">A Full Service Art Exhibit Space</p>
     </div>
   </section>
 
-  <!-- Base Space Rates Grid -->
-  <section class="section container">
-    <div class="rates-section-header">
-      <h2>Base Day Rates</h2>
-      <p class="rates-hero-desc">Choose from our premium, versatile physical spaces. Each base day rate includes access to our professional track lighting, climate control, and digital augmentations.</p>
-    </div>
-
-    <div class="rates-grid">
-      
-      <!-- Space A -->
-      <div class="rate-card">
-        <div class="rate-card-header">
-          <span class="floating-badge" style="font-size: 0.65rem; margin-bottom: 0.8rem; padding: 0.35rem 0.9rem; letter-spacing: 1.5px;">Studio Space</span>
-          <h3 style="color: var(--primary-color);">Space A</h3>
-          <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">400 sq/ft</p>
-          <p>Perfect for intimate solo showcases, local artist features, or boutique pop-up exhibitions.</p>
-        </div>
-        <button class="rate-price-btn" onclick="location.href='<?php echo esc_url( home_url( '/contact' ) ); ?>'">$500 / Day</button>
-      </div>
-
-      <!-- Space B -->
-      <div class="rate-card">
-        <div class="rate-card-header">
-          <span class="floating-badge" style="font-size: 0.65rem; margin-bottom: 0.8rem; padding: 0.35rem 0.9rem; letter-spacing: 1.5px;">Gallery Hall</span>
-          <h3 style="color: var(--primary-color);">Space B</h3>
-          <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">900 sq/ft</p>
-          <p>Ideal for mid-sized exhibitions, collaborative group shows, and private cocktail receptions.</p>
-        </div>
-        <button class="rate-price-btn" onclick="location.href='<?php echo esc_url( home_url( '/contact' ) ); ?>'">$800 / Day</button>
-      </div>
-
-      <!-- Space C -->
-      <div class="rate-card">
-        <div class="rate-card-header">
-          <span class="floating-badge" style="font-size: 0.65rem; margin-bottom: 0.8rem; padding: 0.35rem 0.9rem; letter-spacing: 1.5px;">Premier Pavilion</span>
-          <h3 style="color: var(--primary-color);">Space C</h3>
-          <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">1,400 sq/ft</p>
-          <p>Our largest footprint, designed for expansive multi-sensory displays, large audiences, and high-profile events.</p>
-        </div>
-        <button class="rate-price-btn" onclick="location.href='<?php echo esc_url( home_url( '/contact' ) ); ?>'">$1,200 / Day</button>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Space Capacity Specs & Event Styling Section -->
-  <section class="section container" style="border-top: 1px solid var(--border-color); padding-top: 5rem; padding-bottom: 5rem;">
-    <!-- Specs Table -->
-    <div class="specs-table-container" style="margin-top: 0;">
-      <h3 style="font-family: var(--font-title); font-size: 1.6rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; text-align: left;">Space Capacity Specs</h3>
-      <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 1.5rem; text-align: left;">Compare our spatial footprints to find the right container for your guest count</p>
-      
-      <div style="overflow-x: auto;">
-        <table class="specs-table">
-          <thead>
-            <tr>
-              <th>Gallery Footprint</th>
-              <th>Dimensions</th>
-              <th>Standing Capacity</th>
-              <th>Seated Capacity</th>
-              <th>Base Day Rate</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="font-weight: 700;">Space A</td>
-              <td>400 sq/ft</td>
-              <td>35 Guests</td>
-              <td>20 Guests</td>
-              <td style="font-weight: 700; color: var(--primary-color);">$500</td>
-            </tr>
-            <tr>
-              <td style="font-weight: 700;">Space B</td>
-              <td>900 sq/ft</td>
-              <td>80 Guests</td>
-              <td>50 Guests</td>
-              <td style="font-weight: 700; color: var(--primary-color);">$800</td>
-            </tr>
-            <tr>
-              <td style="font-weight: 700;">Space C</td>
-              <td>1,400 sq/ft</td>
-              <td>120 Guests</td>
-              <td>80 Guests</td>
-              <td style="font-weight: 700; color: var(--primary-color);">$1,200</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- Event Styling / Types Grid -->
-    <div class="exhibition-grid-header" style="margin-top: 5rem; margin-bottom: 3rem; text-align: center;">
+  <!-- Event Styling Section -->
+  <section class="section container" style="padding-top: 5rem; padding-bottom: 5rem;">
+    <div class="exhibition-grid-header" style="margin-top: 0; margin-bottom: 3rem; text-align: center;">
       <h2 class="grid-title">Versatile Event Styling</h2>
       <p class="grid-subtitle">We accommodate a wide variety of custom formats and bookings</p>
     </div>
@@ -135,7 +46,97 @@
     </div>
   </section>
 
-  <!-- Plan Your Own Show (Borderless / Outlines Removed) -->
+  <!-- Base Space Rates Grid -->
+  <section class="section container" style="border-top: 1px solid var(--border-color); padding-top: 5rem; padding-bottom: 5rem;">
+    <div class="rates-section-header">
+      <h2>Base Day Rates</h2>
+      <p class="rates-hero-desc">Choose from our premium, versatile physical spaces. Each base day rate includes access to our professional track lighting, climate control, and digital augmentations.</p>
+    </div>
+
+    <div class="rates-grid">
+      
+      <!-- Space A -->
+      <div class="rate-card">
+        <div class="rate-card-header">
+          <span class="floating-badge" style="font-size: 0.65rem; margin-bottom: 0.8rem; padding: 0.35rem 0.9rem; letter-spacing: 1.5px;">Studio Space</span>
+          <h3 style="color: var(--primary-color);">Space A</h3>
+          <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">400 sq/ft</p>
+          <p>Perfect for intimate solo showcases, local artist features, or boutique pop-up exhibitions.</p>
+        </div>
+        <button class="rate-price-btn" onclick="location.href='<?php echo esc_url( home_url( '/contact' ) ); ?>'">Inquire for Availability</button>
+      </div>
+
+      <!-- Space B -->
+      <div class="rate-card">
+        <div class="rate-card-header">
+          <span class="floating-badge" style="font-size: 0.65rem; margin-bottom: 0.8rem; padding: 0.35rem 0.9rem; letter-spacing: 1.5px;">Gallery Hall</span>
+          <h3 style="color: var(--primary-color);">Space B</h3>
+          <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">900 sq/ft</p>
+          <p>Ideal for mid-sized exhibitions, collaborative group shows, and private cocktail receptions.</p>
+        </div>
+        <button class="rate-price-btn" onclick="location.href='<?php echo esc_url( home_url( '/contact' ) ); ?>'">Inquire for Availability</button>
+      </div>
+
+      <!-- Space C -->
+      <div class="rate-card">
+        <div class="rate-card-header">
+          <span class="floating-badge" style="font-size: 0.65rem; margin-bottom: 0.8rem; padding: 0.35rem 0.9rem; letter-spacing: 1.5px;">Premier Pavilion</span>
+          <h3 style="color: var(--primary-color);">Space C</h3>
+          <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">1,400 sq/ft</p>
+          <p>Our largest footprint, designed for expansive multi-sensory displays, large audiences, and high-profile events.</p>
+        </div>
+        <button class="rate-price-btn" onclick="location.href='<?php echo esc_url( home_url( '/contact' ) ); ?>'">Inquire for Availability</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Specs Table Section -->
+  <section class="section container" style="border-top: 1px solid var(--border-color); padding-top: 5rem; padding-bottom: 5rem;">
+    <div class="specs-table-container">
+      <h3 style="font-family: var(--font-title); font-size: 1.6rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; text-align: left;">Space Capacity Specs</h3>
+      <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 1.5rem; text-align: left;">Compare our spatial footprints to find the right container for your guest count</p>
+      
+      <div style="overflow-x: auto;">
+        <table class="specs-table">
+          <thead>
+            <tr>
+              <th>Gallery Footprint</th>
+              <th>Dimensions</th>
+              <th>Standing Capacity</th>
+              <th>Seated Capacity</th>
+              <th>Base Day Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="font-weight: 700;">Space A</td>
+              <td>400 sq/ft</td>
+              <td>35 Guests</td>
+              <td>20 Guests</td>
+              <td style="font-weight: 700; color: var(--primary-color);">Inquire for Availability</td>
+            </tr>
+            <tr>
+              <td style="font-weight: 700;">Space B</td>
+              <td>900 sq/ft</td>
+              <td>80 Guests</td>
+              <td>50 Guests</td>
+              <td style="font-weight: 700; color: var(--primary-color);">Inquire for Availability</td>
+            </tr>
+            <tr>
+              <td style="font-weight: 700;">Space C</td>
+              <td>1,400 sq/ft</td>
+              <td>120 Guests</td>
+              <td>80 Guests</td>
+              <td style="font-weight: 700; color: var(--primary-color);">Inquire for Availability</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plan Your Show (Borderless / Outlines Removed) -->
   <section class="section section-alt">
     <div class="section-divider section-divider-top section-divider-curve">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -148,8 +149,8 @@
         
         <!-- Left Side Text -->
         <div class="plan-show-text">
-          <h2 style="font-size: 2.5rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1.5rem;">Plan Your Own Show</h2>
-          <p class="rates-hero-desc">Customize your exhibition or event at The Boxx with our full-service media, curatorial, and logistical packages. We handle the details so you can focus on the art.</p>
+          <h2 style="font-size: 2.5rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1.5rem;">Plan Your Show</h2>
+          <p class="rates-hero-desc">Additional services available to power your event</p>
           <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/klee_painting.jpg" alt="Mit dem Ei by Paul Klee" style="width: 100%; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); margin-top: 2rem;">
         </div>
 
@@ -158,67 +159,67 @@
           
           <li class="plan-show-item">
             <span class="plan-show-name">Live Webcasting Options</span>
-            <span class="plan-show-price">$1,000 – $2,500</span>
+            
           </li>
           
           <li class="plan-show-item">
             <span class="plan-show-name">Artistic Director Services</span>
-            <span class="plan-show-price">$150 / hr</span>
+            
           </li>
 
           <li class="plan-show-item">
             <span class="plan-show-name">Project Management Support</span>
-            <span class="plan-show-price">$150 / hr</span>
+            
           </li>
 
           <li class="plan-show-item">
             <span class="plan-show-name">1 Minute Exhibition Sizzle Video</span>
-            <span class="plan-show-price">$1,500</span>
+            
           </li>
 
           <li class="plan-show-item">
             <span class="plan-show-name">30 Second Promotional Video</span>
-            <span class="plan-show-price">$1,500</span>
+            
           </li>
 
           <li class="plan-show-item">
             <span class="plan-show-name">Audio Package (PA System + Speakers &amp; Mic)</span>
-            <span class="plan-show-price">$500</span>
+            
           </li>
 
           <li class="plan-show-item">
             <span class="plan-show-name">Liability Insurance Coverage</span>
-            <span class="plan-show-price">$500</span>
+            
           </li>
 
           <li class="plan-show-item">
             <span class="plan-show-name">Professional Emcee / Host</span>
-            <span class="plan-show-price">$1,000</span>
+            
           </li>
 
           <li class="plan-show-item">
             <span class="plan-show-name">Website Spotlight Feature</span>
-            <span class="plan-show-price">$500</span>
+            
           </li>
 
           <li class="plan-show-item">
             <span class="plan-show-name">Curating Options</span>
-            <span class="plan-show-price">From $600</span>
+            
           </li>
 
           <li class="plan-show-item">
             <span class="plan-show-name">Design and Display Packages</span>
-            <span class="plan-show-price">From $500</span>
+            
           </li>
 
           <li class="plan-show-item">
             <span class="plan-show-name">Lighting Options</span>
-            <span class="plan-show-price">From $900</span>
+            
           </li>
 
           <li class="plan-show-item">
             <span class="plan-show-name">Decor Options</span>
-            <span class="plan-show-price">From $750</span>
+            
           </li>
 
         </ul>
