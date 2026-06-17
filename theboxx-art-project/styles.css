@@ -1,16 +1,3 @@
-/*
-Theme Name: The Boxx Art Gallery Custom Theme
-Theme URI: https://theboxx.art
-Author: Antigravity
-Author URI: https://google.com
-Description: A premium, contemporary custom theme for The Boxx Art Gallery & Vaughan Studio Space. Features responsive WordPress-style carousels, custom start animations, and modern page-builder styling enhancements.
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: theboxx
-Tags: portfolio, art-gallery, minimalist, responsive-layout, custom-menu, post-formats
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root {
@@ -1893,130 +1880,6 @@ body.loading-active.loaded-content .exhibits-header {
   transition-delay: 0.2s;
 }
 
-
-/* ==========================================
-   9. PREMIUM WORDPRESS PAGE-BUILDER STYLE ADDITIONS
-   ========================================== */
-
-/* Overlapping Spotlight Columns (Elementor Style) */
-@media (min-width: 993px) {
-  .artist-spotlight-bio {
-    padding: 3.5rem;
-    background: #ffffff;
-    border-radius: 6px;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.04);
-    margin-right: -6rem;
-    z-index: 2;
-    position: relative;
-    border-left: 4px solid var(--primary-color);
-  }
-  .artist-spotlight-photo {
-    transform: scale(1.02);
-    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.08);
-    border-radius: 6px;
-    overflow: hidden;
-  }
-}
-
-/* Floating Badges */
-.floating-badge {
-  display: inline-block;
-  background-color: var(--primary-color);
-  color: #ffffff;
-  font-size: 0.75rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 0.5rem 1.4rem;
-  border-radius: 50px;
-  margin-bottom: 1.2rem;
-  box-shadow: 0 6px 15px rgba(155, 122, 76, 0.25);
-  animation: floatAnim 3s ease-in-out infinite;
-}
-
-@keyframes floatAnim {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
-}
-
-/* Section Shape Dividers (SVG Dividers) */
-.section-divider {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: 5;
-}
-
-.section-divider-bottom {
-  bottom: 0;
-}
-
-.section-divider-top {
-  top: 0;
-}
-
-.section-divider svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 50px;
-}
-
-.section-divider-curve .shape-fill {
-  fill: var(--bg-offset);
-}
-
-.section-divider-curve-white .shape-fill {
-  fill: var(--bg-light);
-}
-
-/* Rate Cards Enhancements */
-.rate-card {
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.01);
-  overflow: hidden;
-}
-
-.rate-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 45px rgba(255, 0, 0, 0.12);
-  border-color: var(--primary-hover);
-}
-
-.rate-card-header h3 {
-  transition: color 0.3s ease;
-}
-
-.rate-card:hover .rate-card-header h3 {
-  color: var(--primary-hover) !important;
-}
-
-/* Timeline Lift Animation */
-.timeline-item {
-  transition: transform 0.3s ease;
-}
-.timeline-item:hover {
-  transform: translateX(5px);
-}
-.timeline-left:hover {
-  transform: translateX(-5px);
-}
-
-/* Smooth Focus Animations on Form Fields */
-.form-control {
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-.form-control:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(155, 122, 76, 0.15);
-  outline: none;
-}
-
-
 /* ==========================================
    EXHIBITIONS PAGE PREMIUM ENHANCEMENTS
    ========================================== */
@@ -3378,3 +3241,5 @@ body.loading-active.loaded-content .exhibits-header {
     gap: 3rem;
   }
 }
+
+

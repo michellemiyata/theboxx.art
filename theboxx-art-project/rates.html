@@ -1,6 +1,79 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rates &amp; Booking | The Boxx Art Gallery</title>
+  <meta name="description" content="View studio and gallery rental rates for The Boxx. Plan your own show in Vaughan with custom curating, design, lighting, and audio packages.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <script>
+    // Prevent FOUC: if they have seen the intro, don't apply loading-active
+    if (!sessionStorage.getItem('theboxx_intro_seen')) {
+      document.body.classList.add('loading-active');
+    }
+  </script>
 
-<!-- Page Header -->
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrapper">
+        <img src="assets/logo.png" alt="The Boxx Logo" class="preloader-logo-img">
+      </div>
+      <h1 class="preloader-title">THE BOXX</h1>
+      <div class="preloader-line-separator"></div>
+      <p class="preloader-subtitle">ART GALLERY</p>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <!-- Logo -->
+        <img src="assets/logo.png" alt="The Boxx Logo" class="nav-logo" style="height: 45px; width: auto; object-fit: contain;">
+      </a>
+      
+      <!-- Nav Menu -->
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="currentexhibits.html">Exhibitions</a></li>
+          <li class="nav-item active"><a href="rates.html">Gallery and Event Bookings</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          
+          <!-- Mobile Social Links -->
+          <li class="nav-socials mobile-only">
+            <a href="https://www.facebook.com/theboxx" class="nav-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/theboxx.art" class="nav-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/theboxx" class="nav-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Socials -->
+      <div class="nav-socials desktop-only">
+        <a href="https://www.facebook.com/theboxx" class="nav-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/theboxx.art" class="nav-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/theboxx" class="nav-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      </div>
+
+      <!-- Hamburger Menu -->
+      <button class="nav-hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
   <section class="exhibits-header" style="background-image: url('assets/hero_gallery_2.png');">
     <div class="container">
       <h1 class="section-title" style="color: #ffffff; margin-bottom: 0;">Gallery and Event Bookings</h1>
@@ -58,34 +131,31 @@
       <!-- Space A -->
       <div class="rate-card">
         <div class="rate-card-header">
-          <span class="floating-badge" style="font-size: 0.65rem; margin-bottom: 0.8rem; padding: 0.35rem 0.9rem; letter-spacing: 1.5px;">Studio Space</span>
           <h3 style="color: var(--primary-color);">Space A</h3>
           <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">400 sq/ft</p>
           <p>Perfect for intimate solo showcases, local artist features, or boutique pop-up exhibitions.</p>
         </div>
-        <button class="rate-price-btn" onclick="location.href='<?php echo esc_url( home_url( '/contact' ) ); ?>'">Inquire for Availability</button>
+        <button class="rate-price-btn" onclick="location.href='contact.html'">Inquire for Availability</button>
       </div>
 
       <!-- Space B -->
       <div class="rate-card">
         <div class="rate-card-header">
-          <span class="floating-badge" style="font-size: 0.65rem; margin-bottom: 0.8rem; padding: 0.35rem 0.9rem; letter-spacing: 1.5px;">Gallery Hall</span>
           <h3 style="color: var(--primary-color);">Space B</h3>
           <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">900 sq/ft</p>
           <p>Ideal for mid-sized exhibitions, collaborative group shows, and private cocktail receptions.</p>
         </div>
-        <button class="rate-price-btn" onclick="location.href='<?php echo esc_url( home_url( '/contact' ) ); ?>'">Inquire for Availability</button>
+        <button class="rate-price-btn" onclick="location.href='contact.html'">Inquire for Availability</button>
       </div>
 
       <!-- Space C -->
       <div class="rate-card">
         <div class="rate-card-header">
-          <span class="floating-badge" style="font-size: 0.65rem; margin-bottom: 0.8rem; padding: 0.35rem 0.9rem; letter-spacing: 1.5px;">Premier Pavilion</span>
           <h3 style="color: var(--primary-color);">Space C</h3>
           <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">1,400 sq/ft</p>
           <p>Our largest footprint, designed for expansive multi-sensory displays, large audiences, and high-profile events.</p>
         </div>
-        <button class="rate-price-btn" onclick="location.href='<?php echo esc_url( home_url( '/contact' ) ); ?>'">Inquire for Availability</button>
+        <button class="rate-price-btn" onclick="location.href='contact.html'">Inquire for Availability</button>
       </div>
 
     </div>
@@ -138,11 +208,6 @@
 
   <!-- Plan Your Show (Borderless / Outlines Removed) -->
   <section class="section section-alt">
-    <div class="section-divider section-divider-top section-divider-curve">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,1,321.39,56.44Z" class="shape-fill"></path>
-      </svg>
-    </div>
     <div class="container">
       
       <div class="plan-show-layout">
@@ -151,7 +216,7 @@
         <div class="plan-show-text">
           <h2 style="font-size: 2.5rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1.5rem;">Plan Your Show</h2>
           <p class="rates-hero-desc">Additional services available to power your event</p>
-          <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/klee_painting.jpg" alt="Mit dem Ei by Paul Klee" style="width: 100%; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); margin-top: 2rem;">
+          <img src="assets/klee_painting.jpg" alt="Mit dem Ei by Paul Klee" style="width: 100%; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); margin-top: 2rem;">
         </div>
 
         <!-- Right Side List (No border outlines or containers) -->
@@ -312,5 +377,60 @@
   </section>
 
   <!-- High-Contrast Vertical Footer -->
-  
-<?php get_footer(); ?>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <!-- Logo in Footer -->
+          <img src="assets/logo.png" alt="The Boxx Logo" style="height: 60px; width: auto; object-fit: contain; margin-bottom: 1.5rem; background-color: #ffffff; padding: 6px; border-radius: 2px;">
+          <p>A contemporary gallery hosting boundary-pushing physical exhibitions, augmented reality displays, and custom studio event rentals in Concord/Vaughan.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/theboxx" class="footer-social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/theboxx.art" class="footer-social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/theboxx" class="footer-social-icon" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="currentexhibits.html">Exhibitions</a></li>
+            <li><a href="rates.html">Gallery and Event Bookings</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Hours -->
+        <div class="footer-col">
+          <h4>Gallery Hours</h4>
+          <p>Tue – Thu: 9:00 AM – 7:00 PM</p>
+          <p>Fri – Sat: 9:00 AM – 5:00 PM</p>
+          <p>Sun: 8:00 AM – 6:00 PM</p>
+          <p style="color: var(--primary-color);">Monday: Closed</p>
+          <p>[Exhibition Hours or By Appointment]</p>
+        </div>
+
+        <!-- Col 4: Location -->
+        <div class="footer-col">
+          <h4>Address</h4>
+          <p>207 Edgeley Blvd, Unit #8<br>Concord, Vaughan, ON<br>L4K 4B5</p>
+          <p><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>info@theboxx.art</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Boxx Art Gallery. All rights reserved.</p>
+        <p>Powered by C3 Labs</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Controllers -->
+  <script src="script.js"></script>
+</body>
+</html>
