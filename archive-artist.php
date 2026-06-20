@@ -1,13 +1,5 @@
 <?php get_header(); ?>
 
-  <!-- Page Header -->
-  <section class="exhibits-header" style="background-image: url('<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/leadership-banner.jpeg');">
-    <div class="container">
-      <h1 class="section-title" style="color: #ffffff; margin-bottom: 0;">Featured Artists</h1>
-      <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; margin-top: 0.5rem; letter-spacing: 1px; text-transform: uppercase;">Meet the Creators &amp; Curators of The Boxx</p>
-    </div>
-  </section>
-
   <!-- Main Artists Grid -->
   <section class="section container">
     <div class="exhibition-grid-header" style="margin-top: 0; margin-bottom: 4rem;">
